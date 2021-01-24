@@ -1,0 +1,18 @@
+body {
+    background-color: #1E2127;    // slate
+    //background-color: #DDDDDD;  // grey
+    //background-color: #23232F;    // slate
+}
+
+
+td, tr, table, pre {
+    //background-color: #bbbbbbff;  // #CDCDCD;
+}
+
+td, tr, table, pre, code, pre {
+    background-color: #191A21FF;  // table background for slate
+    //background-color: #EEEEEEFF;  // table background for white
+    //background-color: #EEEEEEFF;  // table background for white
+    font-size: px2rem(18px);
+    height: px2rem(13px);
+}

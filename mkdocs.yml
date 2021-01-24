@@ -1,0 +1,157 @@
+﻿site_name: wonkey-coders
+
+#
+# Navigation
+#
+nav:
+    - Start:                              index.md
+    - Demos:
+        - Wonkey Examples:                examples.md
+        - Community Examples:             community.md
+#    - Introduction:
+#        - About: about_docs.md
+    - Docs:
+        - User Guide:
+            - Overview:                   docs/guide/index.md
+            - The 'wake' compiler:        docs/guide/wake.md
+            - Target SDKs:
+                - Overview:               docs/guide/sdks/index.md
+                - Android:                docs/guide/sdks/android.md
+                - Emscripten:             docs/guide/sdks/emscripten.md
+                - iOS:                    docs/guide/sdks/ios.md
+                - Linux:                  docs/guide/sdks/linux.md
+                - macOS:                  docs/guide/sdks/mac.md
+                - Raspberry Pi:           docs/guide/sdks/raspberry.md
+                - Windows:                docs/guide/sdks/windows.md
+        - Language Reference:
+            - Overview:                   docs/lang/index.md
+            - Imports:                    docs/lang/import.md
+            - Assets:                     docs/lang/assets.md
+            - Comments:                   docs/lang/comments.md
+            - Namespaces:                 docs/lang/namespace.md
+            - Functions:
+                - Global functions:       docs/lang/function.md
+                - Lambda functions:       docs/lang/lambda.md
+                - Function overloading:   docs/lang/function-overloading.md
+                - Function values:        docs/lang/function-values.md
+            - Expressions:
+                - Overview:               docs/lang/expressions.md
+                - Operators:              docs/lang/operators.md
+                - Casting:                docs/lang/cast.md
+                - Type balancing:         docs/lang/type-balancing.md
+            - Variables:                  docs/lang/variables.md
+            - Strings:                    docs/lang/string.md
+            - Variants:                   docs/lang/variant.md
+            - Aliases:                    docs/lang/alias.md
+            - Basic types:                docs/lang/datatypes.md
+            - Compound types:
+                - Overview:               docs/lang/compound-types.md
+                - Arrays:                 docs/lang/array.md
+                - Enums:                  docs/lang/enum.md
+                - Pointers:               docs/lang/pointer.md
+                - Classes:                docs/lang/class.md
+                - Structs:                docs/lang/struct.md
+                - Interfaces:             docs/lang/interface.md
+                - Fields:                 docs/lang/field.md
+                - Methods:                docs/lang/method.md
+                - Class/Struct Functions: docs/lang/class-function.md
+                - Properties:             docs/lang/property.md
+                - Conversion Operators:   docs/lang/conversion-operators.md
+                - Operator overloading:   docs/lang/operator-overloading.md
+                - Inheritance:            docs/lang/extends.md
+                - Extensions:             docs/lang/extension.md
+                - Encapsulation:          docs/lang/encapsulation.md
+            - Generics:
+                - Overview:               docs/lang/generics.md
+                - Generic Function:       docs/lang/generic-function.md
+                - Generic Class:          docs/lang/generic-class.md
+                - Generic Struct:         docs/lang/generic-struct.md
+                - Generic Interface:      docs/lang/generic-interface.md
+            - Conditional statements:     docs/lang/conditional-statements.md
+            - Loop statements:            docs/lang/loop-statements.md
+            - The Preprocessor:           docs/lang/preprocessor.md
+            - Error handling:             docs/lang/error-handling.md
+            - Weak references:            docs/lang/weak-references.md
+            - Reflection:                 docs/lang/reflection.md
+            - Modules:                    docs/lang/modules.md
+            - Native code:                docs/lang/native-code.md
+            - Misc:                       docs/lang/misc.md
+#        - Modules Reference:
+#            - Overview:                   docs/modules/index.md
+
+#    - About:
+#        - About: about_docs.md
+
+#    - Wonkey Site: https://github.com/wonkey-coders/wonkey
+
+
+# Theme
+#
+# built-in themes:
+#
+#     + mkdocs (default)
+#     + readthedocs
+#     + windmill
+#     + material
+theme:
+    name: material
+    logo: 'images/w_round.png'
+    favicon: 'images/favicon.ico'
+    palette:
+        scheme: slate
+        primary: 'black'
+        accent: 'light blue'
+        #primary: 'light blue'
+        #accent: 'light blue'
+        #primary: 'Red'
+        #accent: 'Red'
+#    font:
+#        text: 'Ubuntu'
+#        code: 'Ubuntu Mono'
+#    feature:
+#        tabs: true
+    #highlightjs: true
+    #hljs_languages:
+    #    - monkey
+#    use_pygments: true
+    shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+
+#
+# CSS
+#
+extra_css:
+    - 'stylesheets/extra.css'
+#
+# Extensions
+#
+markdown_extensions:
+    - attr_list
+    #- codehilite:
+    #    linenums: true
+    #    guess_lang: false
+    - admonition
+    - toc:
+        permalink: "#"
+        separator: "_"
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#    - pymdownx.highligth:
+#        linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde

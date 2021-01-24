@@ -1,0 +1,1509 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+    
+    
+      
+        <title>Reflection - wonkey-coders</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.75751829.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reflection" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="wonkey-coders" class="md-header-nav__button md-logo" aria-label="wonkey-coders">
+      
+  <img src="../../../images/w_round.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            wonkey-coders
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Reflection
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="wonkey-coders" class="md-nav__button md-logo" aria-label="wonkey-coders">
+      
+  <img src="../../../images/w_round.png" alt="logo">
+
+    </a>
+    wonkey-coders
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        Demos
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Demos" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Demos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/" class="md-nav__link">
+        Wonkey Examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/" class="md-nav__link">
+        Community Examples
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      
+      <label class="md-nav__link" for="nav-3">
+        Docs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Docs" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+      
+      <label class="md-nav__link" for="nav-3-1">
+        User Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="User Guide" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-1">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/wake/" class="md-nav__link">
+        The 'wake' compiler
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1-3" type="checkbox" id="nav-3-1-3" >
+      
+      <label class="md-nav__link" for="nav-3-1-3">
+        Target SDKs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Target SDKs" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-1-3">
+          <span class="md-nav__icon md-icon"></span>
+          Target SDKs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/android/" class="md-nav__link">
+        Android
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/emscripten/" class="md-nav__link">
+        Emscripten
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/ios/" class="md-nav__link">
+        iOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/mac/" class="md-nav__link">
+        macOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/raspberry/" class="md-nav__link">
+        Raspberry Pi
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sdks/windows/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+      
+      <label class="md-nav__link" for="nav-3-2">
+        Language Reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Language Reference" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-2">
+          <span class="md-nav__icon md-icon"></span>
+          Language Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import/" class="md-nav__link">
+        Imports
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comments/" class="md-nav__link">
+        Comments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace/" class="md-nav__link">
+        Namespaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-6" type="checkbox" id="nav-3-2-6" >
+      
+      <label class="md-nav__link" for="nav-3-2-6">
+        Functions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Functions" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-6">
+          <span class="md-nav__icon md-icon"></span>
+          Functions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function/" class="md-nav__link">
+        Global functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lambda/" class="md-nav__link">
+        Lambda functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function-overloading/" class="md-nav__link">
+        Function overloading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function-values/" class="md-nav__link">
+        Function values
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-7" type="checkbox" id="nav-3-2-7" >
+      
+      <label class="md-nav__link" for="nav-3-2-7">
+        Expressions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Expressions" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-7">
+          <span class="md-nav__icon md-icon"></span>
+          Expressions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expressions/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/" class="md-nav__link">
+        Operators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cast/" class="md-nav__link">
+        Casting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type-balancing/" class="md-nav__link">
+        Type balancing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string/" class="md-nav__link">
+        Strings
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variant/" class="md-nav__link">
+        Variants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alias/" class="md-nav__link">
+        Aliases
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datatypes/" class="md-nav__link">
+        Basic types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-13" type="checkbox" id="nav-3-2-13" >
+      
+      <label class="md-nav__link" for="nav-3-2-13">
+        Compound types
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Compound types" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-13">
+          <span class="md-nav__icon md-icon"></span>
+          Compound types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compound-types/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../array/" class="md-nav__link">
+        Arrays
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enum/" class="md-nav__link">
+        Enums
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pointer/" class="md-nav__link">
+        Pointers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class/" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../struct/" class="md-nav__link">
+        Structs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        Interfaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../field/" class="md-nav__link">
+        Fields
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../method/" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-function/" class="md-nav__link">
+        Class/Struct Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conversion-operators/" class="md-nav__link">
+        Conversion Operators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operator-overloading/" class="md-nav__link">
+        Operator overloading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extends/" class="md-nav__link">
+        Inheritance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extension/" class="md-nav__link">
+        Extensions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encapsulation/" class="md-nav__link">
+        Encapsulation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-14" type="checkbox" id="nav-3-2-14" >
+      
+      <label class="md-nav__link" for="nav-3-2-14">
+        Generics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Generics" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-14">
+          <span class="md-nav__icon md-icon"></span>
+          Generics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generics/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic-function/" class="md-nav__link">
+        Generic Function
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic-class/" class="md-nav__link">
+        Generic Class
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic-struct/" class="md-nav__link">
+        Generic Struct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generic-interface/" class="md-nav__link">
+        Generic Interface
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conditional-statements/" class="md-nav__link">
+        Conditional statements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-statements/" class="md-nav__link">
+        Loop statements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preprocessor/" class="md-nav__link">
+        The Preprocessor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../error-handling/" class="md-nav__link">
+        Error handling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weak-references/" class="md-nav__link">
+        Weak references
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Reflection
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Reflection
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeof_and_typeinfo" class="md-nav__link">
+    Typeof and TypeInfo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declinfo_objects" class="md-nav__link">
+    DeclInfo objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting_and_setting_variables" class="md-nav__link">
+    Getting and setting variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoking_methods_and_functions" class="md-nav__link">
+    Invoking methods and functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-code/" class="md-nav__link">
+        Native code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/" class="md-nav__link">
+        Misc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeof_and_typeinfo" class="md-nav__link">
+    Typeof and TypeInfo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declinfo_objects" class="md-nav__link">
+    DeclInfo objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting_and_setting_variables" class="md-nav__link">
+    Getting and setting variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoking_methods_and_functions" class="md-nav__link">
+    Invoking methods and functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="reflection">Reflection<a class="headerlink" href="#reflection" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>To use reflection in your code, you first need to import the reflection module.</p>
+<p><code>#Import "&lt;reflection&gt;"</code></p>
+<h2 id="typeof_and_typeinfo">Typeof and TypeInfo<a class="headerlink" href="#typeof_and_typeinfo" title="Permanent link">#</a></h2>
+<p>The Typeof operator return a TypeInfo object, that contains various properties and methods for inspecting types at runtime. There are 2 ways to use Typeof:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">Local</span> <span class="nv">type</span> <span class="p">:</span><span class="o">=</span> <span class="nf">Typeof</span><span class="p">(</span> <span class="nv">expression</span> <span class="p">)</span>
+<span class="kd">Local</span> <span class="nv">type</span> <span class="p">:</span><span class="o">=</span> <span class="nf">Typeof</span><span class="o">&lt;</span> <span class="nv">type</span> <span class="o">&gt;</span>
+</code></pre></div>
+<p>The use of seperate () and &lt;&gt; delimeters is to prevent the parser getting confused by complex expressions.</p>
+<p>TypeInfo objects have a To:String operator (mainly for debugging) so can be printed directly:</p>
+<div class="highlight"><pre><span></span><code><span class="nf">Print</span> <span class="nf">Typeof</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span>
+<span class="nf">Print</span> <span class="nf">Typeof</span><span class="o">&lt;</span><span class="kt">Int</span> <span class="nf">Ptr</span><span class="o">&gt;</span>
+
+<span class="kd">Local</span> <span class="nv">t</span> <span class="p">:</span><span class="o">=</span> <span class="mi">10</span>
+
+<span class="nf">Print</span> <span class="nf">Typeof</span><span class="p">(</span> <span class="nv">t</span> <span class="p">)</span>
+<span class="nf">Print</span> <span class="nf">Typeof</span><span class="p">(</span> <span class="s2">&quot;yes&quot;</span> <span class="p">)</span>
+</code></pre></div>
+<p>Typeof returns the 'static' type of a class object. To get the actual instance type, use the Object.InstanceType property:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">Class</span> <span class="nc">C</span>
+<span class="kr">End</span>
+
+<span class="kr">Class</span> <span class="nc">D</span> <span class="kr">Extends</span> <span class="nc">C</span>
+<span class="kr">End</span>
+
+<span class="kr">Function</span> <span class="nf">Main</span><span class="p">()</span>
+    <span class="kd">Local</span> <span class="nv">c</span><span class="p">:</span><span class="nc">C</span><span class="o">=</span><span class="kr">new</span> <span class="nc">D</span>
+    <span class="nf">Print</span> <span class="nf">Typeof</span><span class="p">(</span> <span class="nv">c</span> <span class="p">)</span>    <span class="c">&#39; Class default.C</span>
+    <span class="nf">Print</span> <span class="nv">c</span><span class="p">.</span><span class="nf">InstanceType</span> <span class="c">&#39; Class default.D</span>
+<span class="kr">End</span>
+</code></pre></div>
+<p>You can retrieve the type of the value contained in a variant using the Variant.Type property:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">Local</span> <span class="nv">v</span> <span class="p">:</span><span class="o">=</span> <span class="nf">Variant</span><span class="p">(</span> <span class="mi">10</span> <span class="p">)</span> <span class="c">&#39; creates a variant containing an int.</span>
+<span class="nf">Print</span> <span class="nv">v</span><span class="p">.</span><span class="nf">Type</span>             <span class="c">&#39; prints &#39;Int&#39;</span>
+</code></pre></div>
+<p>TypeInfo also includes functions for inspecting all user defined types:</p>
+<p><code>Function TypeInfo.GetType( name:String )</code></p>
+<p>Returns the TypeInfo for a named type. A named type is a namespace or class declared by your app - it does not include primitive types, pointer types, array types etc. Class names must be prefixed by the namespace they are declared in.</p>
+<p>To get an array of ALL named types:</p>
+<p><code>Function TypeInfo.GetTypes:TypeInfo[]()</code></p>
+<h2 id="declinfo_objects">DeclInfo objects<a class="headerlink" href="#declinfo_objects" title="Permanent link">#</a></h2>
+<p>TypeInfo objects for namespaces and classes also contain a set of DeclInfo objects. A DeclInfo represents the member declarations inside of a namespace or class. Currently, only global, field, method and function members are supported. DeclInfo objects also have a To:String operator to help with debugging.</p>
+<p>You can inspect the member decls of a type using the TypeInfo.GetDecls method:</p>
+<div class="highlight"><pre><span></span><code><span class="nf">Namespace</span> <span class="nv">mynamespace</span>
+
+<span class="kd">Global</span> <span class="nv">test</span><span class="p">:</span><span class="kt">Int</span>
+
+<span class="kr">Function</span> <span class="nf">Main</span><span class="p">()</span>
+
+    <span class="kd">Local</span> <span class="nv">type</span> <span class="p">:</span><span class="o">=</span> <span class="nf">TypeInfo</span><span class="p">.</span><span class="nf">GetType</span><span class="p">(</span> <span class="s2">&quot;mynamespace.MyClass&quot;</span> <span class="p">)</span>
+
+    <span class="kr">For </span><span class="kd">Local</span> <span class="nv">decl</span> <span class="p">:</span><span class="o">=</span> <span class="kr">Eachin </span><span class="nv">type</span><span class="p">.</span><span class="nf">GetDecls</span><span class="p">()</span>
+        <span class="nf">Print</span> <span class="nv">decl</span>
+    <span class="kr">Next</span>
+<span class="kr">End</span>
+</code></pre></div>
+<p>You can retrieve a single unique member using TypeInfo.GetDecl:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">Local</span> <span class="nv">type</span> <span class="p">:</span><span class="o">=</span> <span class="nf">TypeInfo</span><span class="p">.</span><span class="nf">GetType</span><span class="p">(</span> <span class="s2">&quot;mynamespace.MyClass&quot;</span> <span class="p">)</span>
+
+<span class="kd">Local</span> <span class="nv">ctor</span> <span class="p">:</span><span class="o">=</span> <span class="nv">type</span><span class="p">.</span><span class="nf">GetDecl</span><span class="p">(</span> <span class="s2">&quot;New&quot;</span> <span class="p">)</span>
+</code></pre></div>
+<p>There may be several decls with the same name due to method and function overloading, in which case the simple GetDecl above will fail and return null. In this case, you either need to inspect each decl individually to find the one you want, or you can pass an additional TypeInfo parameter to GetDecl:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">Local</span> <span class="nv">type</span> <span class="p">:</span><span class="o">=</span> <span class="nf">TypeInfo</span><span class="p">.</span><span class="nf">GetType</span><span class="p">(</span> <span class="s2">&quot;MyNamespace.MyClass&quot;</span> <span class="p">)</span>
+
+<span class="kd">Local</span> <span class="nv">ctor</span> <span class="p">:</span><span class="o">=</span> <span class="nv">type</span><span class="p">.</span><span class="nf">GetDecl</span><span class="p">(</span> <span class="s2">&quot;New&quot;</span><span class="p">,</span><span class="nf">Typeof</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">()</span><span class="o">&gt;</span> <span class="p">)</span>
+</code></pre></div>
+<p>This will return the default constructor for MyClass, assuming there is one.</p>
+<h2 id="getting_and_setting_variables">Getting and setting variables<a class="headerlink" href="#getting_and_setting_variables" title="Permanent link">#</a></h2>
+<p>Member decls that represent variables (ie: fields and globals) can be read and written using the DeclInfo.Get and Decl.Info.Set methods:</p>
+<div class="highlight"><pre><span></span><code><span class="nf">Namespace</span> <span class="nv">mynamespace</span>
+
+<span class="kd">Global</span> <span class="nf">MyGlobal</span><span class="p">:</span><span class="kt">Int</span>
+
+<span class="kr">Function</span> <span class="nf">Main</span><span class="p">()</span>
+
+    <span class="kd">Local</span> <span class="nv">vdecl</span><span class="p">:</span><span class="o">=</span><span class="nf">TypeInfo</span><span class="p">.</span><span class="nf">GetType</span><span class="p">(</span> <span class="s2">&quot;mynamespace&quot;</span> <span class="p">).</span><span class="nf">GetDecl</span><span class="p">(</span> <span class="s2">&quot;MyGlobal&quot;</span> <span class="p">)</span>
+
+    <span class="nv">vdecl</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span> <span class="nb">Null</span><span class="p">,</span><span class="mi">10</span> <span class="p">)</span>
+
+    <span class="nf">Print</span> <span class="nf">MyGlobal</span>
+
+    <span class="nf">Print</span> <span class="nf">Cast</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">(</span> <span class="nv">vdecl</span><span class="p">.</span><span class="nf">Get</span><span class="p">(</span> <span class="nb">Null</span> <span class="p">)</span> <span class="p">)</span>
+<span class="kr">End</span>
+</code></pre></div>
+<p>The first parameter of Set and Get is an object instance, which must be non-null for getting and setting fields.</p>
+<p>The second parameter of Set is a variant, and is the value to assign to the variable. The type of the value contained in the variant must match the variable type exactly, or a runtime error will occur.</p>
+<p>Note that since any value can be cast to a variant, we can just provide the literal value '10' for Set and it will be implictly converted to a variant for us. On the other hand, we must explicitly cast the result of Get() from a variant back to the type of value we want.</p>
+<h2 id="invoking_methods_and_functions">Invoking methods and functions<a class="headerlink" href="#invoking_methods_and_functions" title="Permanent link">#</a></h2>
+<p>To invoke methods and functions, use the DeclInfo.Invoke method:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">namespace</span> <span class="nv">mynamespace</span>
+
+<span class="kr">Function</span> <span class="nf">Test</span><span class="p">(</span> <span class="nv">msg</span><span class="p">:</span><span class="kt">String</span> <span class="p">)</span>
+    <span class="nf">Print</span> <span class="s2">&quot;Test! msg=&quot;</span><span class="o">+</span><span class="nv">msg</span>
+<span class="kr">End</span>
+
+<span class="kr">Function</span> <span class="nf">Main</span><span class="p">()</span>
+    <span class="kd">Local</span> <span class="nv">fdecl</span> <span class="p">:</span><span class="o">=</span> <span class="nf">TypeInfo</span><span class="p">.</span><span class="nf">GetType</span><span class="p">(</span> <span class="s2">&quot;mynamespace&quot;</span> <span class="p">).</span><span class="nf">GetDecl</span><span class="p">(</span> <span class="s2">&quot;Test&quot;</span> <span class="p">)</span>
+
+    <span class="nv">fdecl</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span> <span class="nb">Null</span><span class="p">,</span><span class="kr">New</span> <span class="nc">Variant</span><span class="p">[](</span> <span class="s2">&quot;Hello Test!&quot;</span> <span class="p">)</span> <span class="p">)</span>
+<span class="kr">End</span>
+</code></pre></div>
+<p>The first parameter of Invoke is an object instance, which must be non-null for invoking methods.</p>
+<p>The second parameter of Invoke is an array of variants that represents the parameters for the call. The types of these parameters must match the parameter types of the actual method or function exactly, or a runtime error will occur.</p>
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">#</a></h2>
+<p>Currently, typeinfo is only generated for non-generic, non-extension, non-extern 100% pure Wonkey globals, fields, function, methods, classes and namespaces. You can still use other types (structs etc) with variants etc, but you wont be able to inspect their members.</p>
+<p>Typeinfo may be stripped out by the linker. I've added a little hack to mojo to keep module typeinfo 'alive', but there is still work to do here. If you find the linker stripping out typeinfo, you can prevent it doing so for now by adding a 'Typeof' to Main() referencing the type you want to keep alive. Or, you can set WX_WHOLE_ARCHIVE in bin/env_blah.txt to '1' to force the linker to include ALL code, but this will of course produce larger executables.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../weak-references/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Weak references
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../modules/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Modules
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -12,7 +12,7 @@ nav:
 #        - About: about_docs.md
     - Docs:
         - User Guide:
-            - Overview:                   docs/guide/index.md
+            - docs/guide/index.md
             - The 'wake' compiler:        docs/guide/wake.md
             - Target SDKs:
                 - Overview:               docs/guide/sdks/index.md
@@ -24,7 +24,7 @@ nav:
                 - Raspberry Pi:           docs/guide/sdks/raspberry.md
                 - Windows:                docs/guide/sdks/windows.md
         - Language Reference:
-            - Overview:                   docs/lang/index.md
+            - docs/lang/index.md
             - Imports:                    docs/lang/import.md
             - Assets:                     docs/lang/assets.md
             - Comments:                   docs/lang/comments.md
@@ -35,7 +35,7 @@ nav:
                 - Function overloading:   docs/lang/function-overloading.md
                 - Function values:        docs/lang/function-values.md
             - Expressions:
-                - Overview:               docs/lang/expressions.md
+                - docs/lang/expressions.md
                 - Operators:              docs/lang/operators.md
                 - Casting:                docs/lang/cast.md
                 - Type balancing:         docs/lang/type-balancing.md
@@ -45,7 +45,7 @@ nav:
             - Aliases:                    docs/lang/alias.md
             - Basic types:                docs/lang/datatypes.md
             - Compound types:
-                - Overview:               docs/lang/compound-types.md
+                - docs/lang/compound-types.md
                 - Arrays:                 docs/lang/array.md
                 - Enums:                  docs/lang/enum.md
                 - Pointers:               docs/lang/pointer.md
@@ -62,7 +62,7 @@ nav:
                 - Extensions:             docs/lang/extension.md
                 - Encapsulation:          docs/lang/encapsulation.md
             - Generics:
-                - Overview:               docs/lang/generics.md
+                - docs/lang/generics.md
                 - Generic Function:       docs/lang/generic-function.md
                 - Generic Class:          docs/lang/generic-class.md
                 - Generic Struct:         docs/lang/generic-struct.md
@@ -76,8 +76,85 @@ nav:
             - Modules:                    docs/lang/modules.md
             - Native code:                docs/lang/native-code.md
             - Misc:                       docs/lang/misc.md
-#        - Modules Reference:
-#            - Overview:                   docs/modules/index.md
+        - Modules Reference:
+            - modules/index.md
+            - wonkey:
+                - modules/wonkey/wonkey-module.md
+                - debug:                   modules/wonkey/wonkey-debug.md
+                - gc:                      modules/wonkey/wonkey-gc.md
+                - math:                    modules/wonkey/wonkey-math.md
+                - types:                   modules/wonkey/wonkey-types.md
+            - std:
+                - modules/std/std-module.md
+                - permissions:             modules/std/std-permissions.md
+                - requesters:              modules/std/std-requesters.md
+                - socket:                  modules/std/std-socket.md
+                - digest:                  modules/std/std-digest.md
+                - base64:                  modules/std/std-base64.md
+                - zipfile:                 modules/std/std-zipfile.md
+                - jsonify:                 modules/std/std-jsonify.md
+                - json:                    modules/std/std-json.md
+                - stringio:                modules/std/std-stringio.md
+                - random:                  modules/std/std-random.md
+                - filesystem:              modules/std/std-filesystem.md
+                - process:                 modules/std/std-process.md
+                - fiber:                   modules/std/std-fiber.md
+                - timer:                   modules/std/std-timer.md
+                - time:                    modules/std/std-time.md
+                - async:                   modules/std/std-async.md
+                - audio:                   modules/std/std-audio.md
+                - graphics:
+                    - modules/std/std-graphics.md
+                    - pixmaploader:        modules/std/std-graphics-pixmaploader.md
+                - geom:                    modules/std/std-geom.md
+                - memory:                  modules/std/std-memory.md
+                - stream:                  modules/std/std-stream.md
+                - resource:                modules/std/std-resource.md
+                - collections:             modules/std/std-collections.md
+            - libc:                        modules/libc/libc-module.md
+            - thread:                      modules/thread/thread-module.md
+            - reflection:                  modules/reflection/reflection-module.md
+            - mojo:
+                - modules/mojo/mojo-module.md
+                - audio:                   modules/mojo/mojo-audio.md
+                - input:                   modules/mojo/mojo-input.md
+                - graphics:
+                    - modules/mojo/mojo-graphics.md
+                    - glutil:              modules/mojo/mojo-graphics-glutil.md
+                - app:                     modules/mojo/mojo-app.md
+            - mojo3d:                      modules/mojo3d/mojo3d-module.md
+            - mojo3d-loaders:              modules/mojo3d-loaders/mojo3d-loaders-module.md
+            - mojo3d-vr:                   modules/mojo3d-vr/mojo3d-vr-module.md
+            - mojox:                       modules/mojox/mojox-module.md
+            - admob:                       modules/admob/admob-module.md
+            - android:                     modules/android/android-module.md
+            - assimp:                      modules/assimp/assimp-module.md
+            - bullet:                      modules/bullet/bullet-module.md
+            - chipmunk:                    modules/chipmunk/chipmunk-module.md
+            - emscripten:                  modules/emscripten/emscripten-module.md
+            - freetype:                    modules/freetype/freetype-module.md
+            - gles20:                      modules/gles20/gles20-module.md
+            - hoedown:                     modules/hoedown/hoedown-module.md
+            - httprequest:                 modules/httprequest/httprequest-module.md
+            - iap:                         modules/iap/iap-module.md
+            - jni:                         modules/jni/jni-module.md
+            - litehtml:                    modules/litehtml/litehtml-module.md
+            - miniz:                       modules/miniz/miniz-module.md
+            - openal:                      modules/openal/openal-module.md
+            - opengl:                      modules/opengl/opengl-module.md
+            - sdl2:                        modules/sdl2/sdl2-module.md
+            - sdl2-mixer:                  modules/sdl2-mixer/sdl2-mixer-module.md
+            - sokol:                       modules/sokol/sokol-module.md
+            - sqlite:                      modules/sqlite/sqlite-module.md
+            - stb-image:                   modules/stb-image/stb-image-module.md
+            - stb-image-write:             modules/stb-image-write/stb-image-write-module.md
+            - stb-truetype:                modules/stb-truetype/stb-truetype-module.md
+            - stb-vorbis:                  modules/stb-vorbis/stb-vorbis-module.md
+            - theoraplayer:                modules/theoraplayer/theoraplayer-module.md
+            - tinyregex:                   modules/tinyregex/tinyregex-module.md
+            - tinyxml2:                    modules/tinyxml2/tinyxml2-module.md
+            - win32:                       modules/win32/win32-module.md
+            - zlib:                        modules/zlib/zlib-module.md
 
 #    - About:
 #        - About: about_docs.md
@@ -120,11 +197,24 @@ theme:
         previous: 80 # p
         search: 83   # s
 
+#use_directory_urls: false
+#strict: true
+
 #
 # CSS
 #
 extra_css:
     - 'stylesheets/extra.css'
+
+#
+# Plugins
+#
+plugins:
+    - section-index
+    - search:
+        separator: '[\s\-\.]+'
+
+
 #
 # Extensions
 #

@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_create\_collation16_
+##### Function sqlite3\_create\_collation16:[Int](../../modules/wonkey/wonkey-types-int.md)( :[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zName:Void Ptr,eTextRep:[Int](../../modules/wonkey/wonkey-types-int.md),pArg:Void Ptr,xCompare:[Int](../../modules/wonkey/wonkey-types-int.md)(Void Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),Void Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),Void Ptr) )

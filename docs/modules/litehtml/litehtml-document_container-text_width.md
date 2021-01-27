@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document\_container](../../modules/litehtml/litehtml-document_container.md).text\_width_
+##### Method text\_width:[Int](../../modules/wonkey/wonkey-types-int.md)( text:[String](../../modules/wonkey/wonkey-types-string.md),font:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md) )

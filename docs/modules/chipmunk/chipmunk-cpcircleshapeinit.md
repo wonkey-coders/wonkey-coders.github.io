@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpCircleShapeInit_
+##### Function cpCircleShapeInit:[cpCircleShape](../../modules/chipmunk/chipmunk-cpcircleshape.md)( circle:[cpCircleShape](../../modules/chipmunk/chipmunk-cpcircleshape.md),body:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),radius:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),offset:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) )

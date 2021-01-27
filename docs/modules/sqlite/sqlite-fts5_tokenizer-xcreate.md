@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).[fts5\_tokenizer](../../modules/sqlite/sqlite-fts5_tokenizer.md).xCreate_
+##### Field xCreate:[Int](../../modules/wonkey/wonkey-types-int.md)(Void Ptr,[libc.const_char_t](../../modules/libc/libc-const_char_t.md) Ptr Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),[Fts5Tokenizer](../../modules/sqlite/sqlite-fts5tokenizer.md) Ptr Ptr)

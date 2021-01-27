@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpRotaryLimitJointInit_
+##### Function cpRotaryLimitJointInit:[cpRotaryLimitJoint](../../modules/chipmunk/chipmunk-cprotarylimitjoint.md)( joint:[cpRotaryLimitJoint](../../modules/chipmunk/chipmunk-cprotarylimitjoint.md),a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),min:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),max:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

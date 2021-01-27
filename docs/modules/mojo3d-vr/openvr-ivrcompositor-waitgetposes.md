@@ -1,0 +1,2 @@
+_[mojo3d-vr](../../modules/mojo3d-vr/mojo3d-vr-module.md):[openvr](openvr:).[IVRCompositor](openvr:openvr-ivrcompositor.md).WaitGetPoses_
+##### Method WaitGetPoses:[EVRCompositorError](../../modules/mojo3d-vr/openvr-evrcompositorerror.md)( pRenderPoseArray:[TrackedDevicePose_t](../../modules/mojo3d-vr/openvr-trackeddevicepose_t.md) Ptr,unRenderPoseArrayCount:[UInt](../../modules/wonkey/wonkey-types-uint.md),pGamePoseArray:[TrackedDevicePose_t](../../modules/mojo3d-vr/openvr-trackeddevicepose_t.md) Ptr,unGamePoseArrayCount:[UInt](../../modules/wonkey/wonkey-types-uint.md) )

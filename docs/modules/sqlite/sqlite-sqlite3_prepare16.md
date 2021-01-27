@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_prepare16_
+##### Function sqlite3\_prepare16:[Int](../../modules/wonkey/wonkey-types-int.md)( db:[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zSql:Void Ptr,nByte:[Int](../../modules/wonkey/wonkey-types-int.md),ppStmt:[sqlite3_stmt](../../modules/sqlite/sqlite-sqlite3_stmt.md) Ptr Ptr,pzTail:Void Ptr Ptr )

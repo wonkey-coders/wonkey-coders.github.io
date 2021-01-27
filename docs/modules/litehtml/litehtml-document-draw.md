@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document](../../modules/litehtml/litehtml-document.md).draw_
+##### Method draw:Void( hdc:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md),x:[Int](../../modules/wonkey/wonkey-types-int.md),y:[Int](../../modules/wonkey/wonkey-types-int.md),clip:[position](../../modules/litehtml/litehtml-position.md) Ptr )

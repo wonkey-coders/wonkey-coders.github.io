@@ -1,0 +1,2 @@
+_[gles20](../../modules/gles20/gles20-module.md):[gles20](../../modules/gles20/gles20-module.md).glGetAttachedShaders_
+##### Function glGetAttachedShaders:Void( program_:[GLuint](../../modules/gles20/gles20-gluint.md),maxcount_:[GLsizei](../../modules/gles20/gles20-glsizei.md),count_:[GLsizei](../../modules/gles20/gles20-glsizei.md) Ptr,shaders_:[GLuint](../../modules/gles20/gles20-gluint.md) Ptr )

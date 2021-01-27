@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glMapGrid2d_
+##### Function glMapGrid2d:Void( un:[GLint](../../modules/opengl/opengl-glint.md),u1:[GLdouble](../../modules/opengl/opengl-gldouble.md),u2:[GLdouble](../../modules/opengl/opengl-gldouble.md),vn:[GLint](../../modules/opengl/opengl-glint.md),v1:[GLdouble](../../modules/opengl/opengl-gldouble.md),v2:[GLdouble](../../modules/opengl/opengl-gldouble.md) )

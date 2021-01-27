@@ -1,0 +1,2 @@
+_[hoedown](../../modules/hoedown/hoedown-module.md):[hoedown](../../modules/hoedown/hoedown-module.md).hoedown\_document\_new_
+##### Function hoedown\_document\_new:[hoedown_document](../../modules/hoedown/hoedown-hoedown_document.md) Ptr( renderer:[hoedown_renderer](../../modules/hoedown/hoedown-hoedown_renderer.md) Ptr,extensions:[hoedown_extensions](../../modules/hoedown/hoedown-hoedown_extensions.md),max_nesting:[Int](../../modules/wonkey/wonkey-types-int.md) )

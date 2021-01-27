@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpacePointQuery_
+##### Function cpSpacePointQuery:Void( space:[cpSpace](../../modules/chipmunk/chipmunk-cpspace.md),point:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),maxDistance:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),filter:[cpShapeFilter](../../modules/chipmunk/chipmunk-cpshapefilter.md),func:[cpSpacePointQueryFunc](../../modules/chipmunk/chipmunk-cpspacepointqueryfunc.md),data:Void Ptr )

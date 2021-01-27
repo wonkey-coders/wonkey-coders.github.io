@@ -1,0 +1,2 @@
+_[stb-vorbis](../../modules/stb-vorbis/stb-vorbis-module.md):[stb.vorbis](stb:stb-vorbis.md).stb\_vorbis\_get\_samples\_short_
+##### Function stb\_vorbis\_get\_samples\_short:[Int](../../modules/wonkey/wonkey-types-int.md)( f:[stb_vorbis](../../modules/stb-vorbis/stb-vorbis-stb_vorbis.md) Ptr,channels:[Int](../../modules/wonkey/wonkey-types-int.md),buffer:[Short](../../modules/wonkey/wonkey-types-short.md) Ptr Ptr,num_samples:[Int](../../modules/wonkey/wonkey-types-int.md) )

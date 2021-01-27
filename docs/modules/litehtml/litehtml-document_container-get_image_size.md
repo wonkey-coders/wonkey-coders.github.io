@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document\_container](../../modules/litehtml/litehtml-document_container.md).get\_image\_size_
+##### Method get\_image\_size:Void( src:[String](../../modules/wonkey/wonkey-types-string.md),baseurl:[String](../../modules/wonkey/wonkey-types-string.md),sz:[size](../../modules/litehtml/litehtml-size.md) Ptr )

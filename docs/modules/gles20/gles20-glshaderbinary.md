@@ -1,0 +1,2 @@
+_[gles20](../../modules/gles20/gles20-module.md):[gles20](../../modules/gles20/gles20-module.md).glShaderBinary_
+##### Function glShaderBinary:Void( n_:[GLsizei](../../modules/gles20/gles20-glsizei.md),shaders_:[GLuint](../../modules/gles20/gles20-gluint.md) Ptr,binaryformat_:[GLenum](../../modules/gles20/gles20-glenum.md),binary_:[GLvoid](../../modules/gles20/gles20-glvoid.md) Ptr,length_:[GLsizei](../../modules/gles20/gles20-glsizei.md) )

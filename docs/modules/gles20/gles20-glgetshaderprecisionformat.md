@@ -1,0 +1,2 @@
+_[gles20](../../modules/gles20/gles20-module.md):[gles20](../../modules/gles20/gles20-module.md).glGetShaderPrecisionFormat_
+##### Function glGetShaderPrecisionFormat:Void( shadertype_:[GLenum](../../modules/gles20/gles20-glenum.md),precisiontype_:[GLenum](../../modules/gles20/gles20-glenum.md),range_:[GLint](../../modules/gles20/gles20-glint.md) Ptr,precision_:[GLint](../../modules/gles20/gles20-glint.md) Ptr )

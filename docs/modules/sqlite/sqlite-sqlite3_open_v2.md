@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_open\_v2_
+##### Function sqlite3\_open\_v2:[Int](../../modules/wonkey/wonkey-types-int.md)( filename:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),ppDb:[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr Ptr,flags:[Int](../../modules/wonkey/wonkey-types-int.md),zVfs:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md) )

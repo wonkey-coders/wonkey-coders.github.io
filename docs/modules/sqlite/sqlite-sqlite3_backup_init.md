@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_backup\_init_
+##### Function sqlite3\_backup\_init:[sqlite3_backup](../../modules/sqlite/sqlite-sqlite3_backup.md) Ptr( pDest:[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zDestName:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),pSource:[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zSourceName:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md) )

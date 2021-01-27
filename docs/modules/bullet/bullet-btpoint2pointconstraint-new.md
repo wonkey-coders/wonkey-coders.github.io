@@ -1,0 +1,3 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btPoint2PointConstraint](../../modules/bullet/bullet-btpoint2pointconstraint.md).New_
+##### Method New:Void( rbA:[btRigidBody](../../modules/bullet/bullet-btrigidbody.md),rbB:[btRigidBody](../../modules/bullet/bullet-btrigidbody.md),pivotInA:[btVector3](../../modules/bullet/bullet-btvector3.md),pivotInB:[btVector3](../../modules/bullet/bullet-btvector3.md) )
+##### Method New:Void( rbA:[btRigidBody](../../modules/bullet/bullet-btrigidbody.md),pivotInA:[btVector3](../../modules/bullet/bullet-btvector3.md) )

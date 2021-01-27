@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glDrawRangeElements_
+##### Function glDrawRangeElements:Void( mode:[GLenum](../../modules/opengl/opengl-glenum.md),start:[GLuint](../../modules/opengl/opengl-gluint.md),e:[GLuint](../../modules/opengl/opengl-gluint.md),count:[GLsizei](../../modules/opengl/opengl-glsizei.md),type:[GLenum](../../modules/opengl/opengl-glenum.md),indices:Void Ptr )

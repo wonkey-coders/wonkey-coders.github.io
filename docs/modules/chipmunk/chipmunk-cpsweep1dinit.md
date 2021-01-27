@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSweep1DInit_
+##### Function cpSweep1DInit:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr( sweep:[cpSweep1D](../../modules/chipmunk/chipmunk-cpsweep1d.md) Ptr,bbfunc:[cpSpatialIndexBBFunc](../../modules/chipmunk/chipmunk-cpspatialindexbbfunc.md),staticIndex:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr )

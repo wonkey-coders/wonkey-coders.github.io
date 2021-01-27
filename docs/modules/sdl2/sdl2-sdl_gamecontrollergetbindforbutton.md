@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_GameControllerGetBindForButton_
+##### Function SDL\_GameControllerGetBindForButton:[SDL_GameControllerButtonBind](../../modules/sdl2/sdl2-sdl_gamecontrollerbuttonbind.md)( gamecontroller:[SDL_GameController](../../modules/sdl2/sdl2-sdl_gamecontroller.md) Ptr,button:[SDL_GameControllerButton](../../modules/sdl2/sdl2-sdl_gamecontrollerbutton.md) )

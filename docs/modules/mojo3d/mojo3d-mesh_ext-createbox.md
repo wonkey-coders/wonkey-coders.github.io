@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Mesh](../../modules/mojo3d/mojo3d-mesh_ext.md).CreateBox_
+##### Function CreateBox:[Mesh](../../modules/mojo3d/mojo3d-mesh.md)( box:[std.geom.Boxf](../../modules/std/std-geom-boxf.md),xsegs:[Int](../../modules/wonkey/wonkey-types-int.md)=1,ysegs:[Int](../../modules/wonkey/wonkey-types-int.md)=1,zsegs:[Int](../../modules/wonkey/wonkey-types-int.md)=1 )

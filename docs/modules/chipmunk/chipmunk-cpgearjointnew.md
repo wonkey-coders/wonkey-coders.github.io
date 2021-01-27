@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpGearJointNew_
+##### Function cpGearJointNew:[cpConstraint](../../modules/chipmunk/chipmunk-cpconstraint.md)( a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),phase:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),ratio:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

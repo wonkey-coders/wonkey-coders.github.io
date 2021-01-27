@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpaceHashNew_
+##### Function cpSpaceHashNew:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr( celldim:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),cells:[Int](../../modules/wonkey/wonkey-types-int.md),bbfunc:[cpSpatialIndexBBFunc](../../modules/chipmunk/chipmunk-cpspatialindexbbfunc.md),staticIndex:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr )

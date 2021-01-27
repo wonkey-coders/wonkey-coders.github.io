@@ -1,0 +1,2 @@
+_[hoedown](../../modules/hoedown/hoedown-module.md):[hoedown](../../modules/hoedown/hoedown-module.md).hoedown\_document\_render\_inline_
+##### Function hoedown\_document\_render\_inline:Void( doc:[hoedown_document](../../modules/hoedown/hoedown-hoedown_document.md) Ptr,ob:[hoedown_buffer](../../modules/hoedown/hoedown-hoedown_buffer.md) Ptr,data:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),size:[Int](../../modules/wonkey/wonkey-types-int.md) )

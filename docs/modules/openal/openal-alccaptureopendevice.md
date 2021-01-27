@@ -1,0 +1,2 @@
+_[openal](../../modules/openal/openal-module.md):[openal](../../modules/openal/openal-module.md).alcCaptureOpenDevice_
+##### Function alcCaptureOpenDevice:[ALCdevice](../../modules/openal/openal-alcdevice.md) Ptr( deviceName:[ALCchar](../../modules/openal/openal-alcchar.md) Ptr,frequency:[ALCuint](../../modules/openal/openal-alcuint.md),format:[ALCenum](../../modules/openal/openal-alcenum.md),buffersize:[ALCsizei](../../modules/openal/openal-alcsizei.md) )

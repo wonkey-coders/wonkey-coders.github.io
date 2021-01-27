@@ -1,0 +1,2 @@
+_[assimp](../../modules/assimp/assimp-module.md):[assimp](../../modules/assimp/assimp-module.md).aiImportFileExWithProperties_
+##### Function aiImportFileExWithProperties:[aiScene](../../modules/assimp/assimp-aiscene.md)( pFile:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),pFlags:[UInt](../../modules/wonkey/wonkey-types-uint.md),pFS:[aiFileIO](../../modules/assimp/assimp-aifileio.md) Ptr,pProps:[aiPropertyStore](../../modules/assimp/assimp-aipropertystore.md) )

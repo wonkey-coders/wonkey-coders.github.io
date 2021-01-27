@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_GameControllerGetBindForAxis_
+##### Function SDL\_GameControllerGetBindForAxis:[SDL_GameControllerButtonBind](../../modules/sdl2/sdl2-sdl_gamecontrollerbuttonbind.md)( gamecontroller:[SDL_GameController](../../modules/sdl2/sdl2-sdl_gamecontroller.md) Ptr,axis:[SDL_GameControllerAxis](../../modules/sdl2/sdl2-sdl_gamecontrolleraxis.md) )

@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glCompressedTexSubImage1D_
+##### Function glCompressedTexSubImage1D:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),level:[GLint](../../modules/opengl/opengl-glint.md),xoffset:[GLint](../../modules/opengl/opengl-glint.md),width:[GLsizei](../../modules/opengl/opengl-glsizei.md),format:[GLenum](../../modules/opengl/opengl-glenum.md),imageSize:[GLsizei](../../modules/opengl/opengl-glsizei.md),data:Void Ptr )

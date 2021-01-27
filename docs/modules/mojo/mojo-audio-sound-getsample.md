@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.audio](../../modules/mojo/mojo-audio.md).[Sound](../../modules/mojo/mojo-audio-sound.md).GetSample_
+##### Method GetSample:[Float](../../modules/wonkey/wonkey-types-float.md)( data:[std.audio.AudioData](../../modules/std/std-audio-audiodata.md),index:[Int](../../modules/wonkey/wonkey-types-int.md),channel:[Int](../../modules/wonkey/wonkey-types-int.md)=0 )

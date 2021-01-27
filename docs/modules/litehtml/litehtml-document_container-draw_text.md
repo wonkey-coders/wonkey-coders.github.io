@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document\_container](../../modules/litehtml/litehtml-document_container.md).draw\_text_
+##### Method draw\_text:Void( hdc:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md),text:[String](../../modules/wonkey/wonkey-types-string.md),font:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md),color:[web_color](../../modules/litehtml/litehtml-web_color.md) Ptr,pos:[position](../../modules/litehtml/litehtml-position.md) Ptr )

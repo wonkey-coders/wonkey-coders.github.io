@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpBodyUpdateVelocity_
+##### Function cpBodyUpdateVelocity:Void( body:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),gravity:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),damping:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),dt:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

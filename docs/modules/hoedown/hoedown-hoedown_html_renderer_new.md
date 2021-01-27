@@ -1,0 +1,2 @@
+_[hoedown](../../modules/hoedown/hoedown-module.md):[hoedown](../../modules/hoedown/hoedown-module.md).hoedown\_html\_renderer\_new_
+##### Function hoedown\_html\_renderer\_new:[hoedown_renderer](../../modules/hoedown/hoedown-hoedown_renderer.md) Ptr( render_flags:[hoedown_html_flags](../../modules/hoedown/hoedown-hoedown_html_flags.md),nesting_level:[Int](../../modules/wonkey/wonkey-types-int.md) )

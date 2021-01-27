@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glTexImage1D_
+##### Function glTexImage1D:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),level:[GLint](../../modules/opengl/opengl-glint.md),internalformat:[GLint](../../modules/opengl/opengl-glint.md),width:[GLsizei](../../modules/opengl/opengl-glsizei.md),border:[GLint](../../modules/opengl/opengl-glint.md),format:[GLenum](../../modules/opengl/opengl-glenum.md),type:[GLenum](../../modules/opengl/opengl-glenum.md),pixels:Void Ptr )

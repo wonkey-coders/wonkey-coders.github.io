@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpatialIndexSegmentQuery_
+##### Function cpSpatialIndexSegmentQuery:Void( index:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr,obj:Void Ptr,a:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),b:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),t_exit:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),func:[cpSpatialIndexSegmentQueryFunc](../../modules/chipmunk/chipmunk-cpspatialindexsegmentqueryfunc.md),data:Void Ptr )

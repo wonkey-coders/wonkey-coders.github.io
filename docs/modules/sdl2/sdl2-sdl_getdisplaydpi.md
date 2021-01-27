@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_GetDisplayDPI_
+##### Function SDL\_GetDisplayDPI:[Int](../../modules/wonkey/wonkey-types-int.md)( displayIndex:[Int](../../modules/wonkey/wonkey-types-int.md),ddpi:[Float](../../modules/wonkey/wonkey-types-float.md) Ptr,hdpi:[Float](../../modules/wonkey/wonkey-types-float.md) Ptr,vdpi:[Float](../../modules/wonkey/wonkey-types-float.md) Ptr )

@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_CreateWindow_
+##### Function SDL\_CreateWindow:[SDL_Window](../../modules/sdl2/sdl2-sdl_window.md) Ptr( title_:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),x_:[Int](../../modules/wonkey/wonkey-types-int.md),y_:[Int](../../modules/wonkey/wonkey-types-int.md),w_:[Int](../../modules/wonkey/wonkey-types-int.md),h_:[Int](../../modules/wonkey/wonkey-types-int.md),flags_:[Int](../../modules/wonkey/wonkey-types-int.md) )

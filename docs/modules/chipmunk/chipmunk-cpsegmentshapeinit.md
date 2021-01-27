@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSegmentShapeInit_
+##### Function cpSegmentShapeInit:[cpSegmentShape](../../modules/chipmunk/chipmunk-cpsegmentshape.md)( seg:[cpSegmentShape](../../modules/chipmunk/chipmunk-cpsegmentshape.md),body:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),a:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),b:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),radius:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

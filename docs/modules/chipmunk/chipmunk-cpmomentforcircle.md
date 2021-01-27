@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpMomentForCircle_
+##### Function cpMomentForCircle:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md)( m:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),r1:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),r2:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),offset:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) )

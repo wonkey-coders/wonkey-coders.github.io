@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_result\_text64_
+##### Function sqlite3\_result\_text64:Void( :[sqlite3_context](../../modules/sqlite/sqlite-sqlite3_context.md) Ptr,:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),:[sqlite3_uint64](../../modules/sqlite/sqlite-sqlite3_uint64.md),:Void(Void Ptr),encoding:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) )

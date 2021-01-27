@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glBlendFuncSeparate_
+##### Function glBlendFuncSeparate:Void( sfactorRGB:[GLenum](../../modules/opengl/opengl-glenum.md),dfactorRGB:[GLenum](../../modules/opengl/opengl-glenum.md),sfactorAlpha:[GLenum](../../modules/opengl/opengl-glenum.md),dfactorAlpha:[GLenum](../../modules/opengl/opengl-glenum.md) )

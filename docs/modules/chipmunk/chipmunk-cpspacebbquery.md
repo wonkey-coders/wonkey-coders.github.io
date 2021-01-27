@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpaceBBQuery_
+##### Function cpSpaceBBQuery:Void( space:[cpSpace](../../modules/chipmunk/chipmunk-cpspace.md),bb:[cpBB](../../modules/chipmunk/chipmunk-cpbb.md),filter:[cpShapeFilter](../../modules/chipmunk/chipmunk-cpshapefilter.md),func:[cpSpaceBBQueryFunc](../../modules/chipmunk/chipmunk-cpspacebbqueryfunc.md),data:Void Ptr )

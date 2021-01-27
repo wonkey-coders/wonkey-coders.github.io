@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_GetWindowGammaRamp_
+##### Function SDL\_GetWindowGammaRamp:[Int](../../modules/wonkey/wonkey-types-int.md)( window_:[SDL_Window](../../modules/sdl2/sdl2-sdl_window.md) Ptr,red_:[Short](../../modules/wonkey/wonkey-types-short.md) Ptr,green_:[Short](../../modules/wonkey/wonkey-types-short.md) Ptr,blue_:[Short](../../modules/wonkey/wonkey-types-short.md) Ptr )

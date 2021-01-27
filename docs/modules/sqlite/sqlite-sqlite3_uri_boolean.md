@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_uri\_boolean_
+##### Function sqlite3\_uri\_boolean:[Int](../../modules/wonkey/wonkey-types-int.md)( zFile:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),zParam:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),bDefault:[Int](../../modules/wonkey/wonkey-types-int.md) )

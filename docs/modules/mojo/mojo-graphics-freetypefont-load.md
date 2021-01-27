@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[FreeTypeFont](../../modules/mojo/mojo-graphics-freetypefont.md).Load_
+##### Function Load:[FreeTypeFont](../../modules/mojo/mojo-graphics-freetypefont.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md)=Null,textureFlags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=TextureFlags.FilterMipmap )

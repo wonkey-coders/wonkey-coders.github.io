@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_load\_extension_
+##### Function sqlite3\_load\_extension:[Int](../../modules/wonkey/wonkey-types-int.md)( db:[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zFile:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),zProc:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),pzErrMsg:[libc.char_t](../../modules/libc/libc-char_t.md) Ptr Ptr )

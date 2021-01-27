@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpaceDebugDrawCircleImpl_
+##### Alias cpSpaceDebugDrawCircleImpl:Void([cpVect](../../modules/chipmunk/chipmunk-cpvect.md),[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),[cpSpaceDebugColor](../../modules/chipmunk/chipmunk-cpspacedebugcolor.md),[cpSpaceDebugColor](../../modules/chipmunk/chipmunk-cpspacedebugcolor.md),[cpDataPointer](../../modules/chipmunk/chipmunk-cpdatapointer.md))

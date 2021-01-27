@@ -1,0 +1,2 @@
+_[stb-image](../../modules/stb-image/stb-image-module.md):[stb.image](stb:stb-image.md).stbi\_load\_from\_file_
+##### Function stbi\_load\_from\_file:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr( f:[libc.FILE](../../modules/libc/libc-file.md) Ptr,x:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,y:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,comp:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,req_comp:[Int](../../modules/wonkey/wonkey-types-int.md) )

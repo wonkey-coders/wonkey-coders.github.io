@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpShapeSegmentQuery_
+##### Function cpShapeSegmentQuery:[cpBool](../../modules/chipmunk/chipmunk-cpbool.md)( shape:[cpShape](../../modules/chipmunk/chipmunk-cpshape.md),a:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),b:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),radius:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),info:[cpSegmentQueryInfo](../../modules/chipmunk/chipmunk-cpsegmentqueryinfo.md) Ptr )

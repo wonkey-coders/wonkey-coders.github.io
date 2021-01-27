@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_JoystickGetBall_
+##### Function SDL\_JoystickGetBall:[Int](../../modules/wonkey/wonkey-types-int.md)( joystick_:[SDL_Joystick](../../modules/sdl2/sdl2-sdl_joystick.md) Ptr,ball_:[Int](../../modules/wonkey/wonkey-types-int.md),dx_:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,dy_:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr )

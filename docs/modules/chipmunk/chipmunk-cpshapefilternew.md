@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpShapeFilterNew_
+##### Function cpShapeFilterNew:[cpShapeFilter](../../modules/chipmunk/chipmunk-cpshapefilter.md)( group:[cpGroup](../../modules/chipmunk/chipmunk-cpgroup.md),categories:[cpBitmask](../../modules/chipmunk/chipmunk-cpbitmask.md),mask:[cpBitmask](../../modules/chipmunk/chipmunk-cpbitmask.md) )

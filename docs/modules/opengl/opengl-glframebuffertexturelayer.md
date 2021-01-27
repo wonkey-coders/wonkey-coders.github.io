@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glFramebufferTextureLayer_
+##### Function glFramebufferTextureLayer:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),attachment:[GLenum](../../modules/opengl/opengl-glenum.md),texture:[GLuint](../../modules/opengl/opengl-gluint.md),level:[GLint](../../modules/opengl/opengl-glint.md),layer:[GLint](../../modules/opengl/opengl-glint.md) )

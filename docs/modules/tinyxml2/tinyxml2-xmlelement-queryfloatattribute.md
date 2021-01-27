@@ -1,0 +1,2 @@
+_[tinyxml2](../../modules/tinyxml2/tinyxml2-module.md):[tinyxml2](../../modules/tinyxml2/tinyxml2-module.md).[XMLElement](../../modules/tinyxml2/tinyxml2-xmlelement.md).QueryFloatAttribute_
+##### Method QueryFloatAttribute:[XMLError](../../modules/tinyxml2/tinyxml2-xmlerror.md)( name:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),value:[Float](../../modules/wonkey/wonkey-types-float.md) Ptr )

@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btDynamicsWorld](../../modules/bullet/bullet-btdynamicsworld.md).stepSimulation_
+##### Method stepSimulation:Void( timeStep:[btScalar](../../modules/bullet/bullet-btscalar.md),maxSubSteps:[Int](../../modules/wonkey/wonkey-types-int.md)=1,fixedTimeStep:[btScalar](../../modules/bullet/bullet-btscalar.md)=(1.0/60.0) )

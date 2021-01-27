@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document](../../modules/litehtml/litehtml-document.md).on\_mouse\_over_
+##### Method on\_mouse\_over:Void( x:[Int](../../modules/wonkey/wonkey-types-int.md),y:[Int](../../modules/wonkey/wonkey-types-int.md),client_x:[Int](../../modules/wonkey/wonkey-types-int.md),client_y:[Int](../../modules/wonkey/wonkey-types-int.md) )

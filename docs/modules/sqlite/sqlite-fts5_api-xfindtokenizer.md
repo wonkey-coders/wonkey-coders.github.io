@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).[fts5\_api](../../modules/sqlite/sqlite-fts5_api.md).xFindTokenizer_
+##### Field xFindTokenizer:[Int](../../modules/wonkey/wonkey-types-int.md)([fts5_api](../../modules/sqlite/sqlite-fts5_api.md) Ptr,[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),Void Ptr Ptr,[fts5_tokenizer](../../modules/sqlite/sqlite-fts5_tokenizer.md) Ptr)

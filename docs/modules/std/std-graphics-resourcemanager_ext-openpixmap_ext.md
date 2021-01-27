@@ -1,0 +1,2 @@
+_[std](../../modules/std/std-module.md):[std.graphics](../../modules/std/std-graphics.md).[ResourceManager](../../modules/std/std-graphics-resourcemanager_ext.md).OpenPixmap_
+##### Method OpenPixmap:[Pixmap](../../modules/std/std-graphics-pixmap.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),format:[PixelFormat](../../modules/std/std-graphics-pixelformat.md)=Null,pmAlpha:[Bool](../../modules/wonkey/wonkey-types-bool.md)=false )

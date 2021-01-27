@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[ListView](../../modules/mojox/mojox-listview.md).[Item](../../modules/mojox/mojox-listview-item.md).New_
+##### Method New:Void( text:[String](../../modules/wonkey/wonkey-types-string.md),icon:[mojo.graphics.Image](../../modules/mojo/mojo-graphics-image.md),list:[ListView](../../modules/mojox/mojox-listview.md) )

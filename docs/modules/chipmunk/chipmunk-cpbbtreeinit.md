@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpBBTreeInit_
+##### Function cpBBTreeInit:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr( tree:[cpBBTree](../../modules/chipmunk/chipmunk-cpbbtree.md) Ptr,bbfunc:[cpSpatialIndexBBFunc](../../modules/chipmunk/chipmunk-cpspatialindexbbfunc.md),staticIndex:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr )

@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glVertexAttrib4Nub_
+##### Function glVertexAttrib4Nub:Void( index:[GLuint](../../modules/opengl/opengl-gluint.md),x:[GLubyte](../../modules/opengl/opengl-glubyte.md),y:[GLubyte](../../modules/opengl/opengl-glubyte.md),z:[GLubyte](../../modules/opengl/opengl-glubyte.md),w:[GLubyte](../../modules/opengl/opengl-glubyte.md) )

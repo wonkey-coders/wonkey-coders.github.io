@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_OpenAudioDevice_
+##### Function SDL\_OpenAudioDevice:[SDL_AudioDeviceID](../../modules/sdl2/sdl2-sdl_audiodeviceid.md)( device_:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),iscapture_:[Int](../../modules/wonkey/wonkey-types-int.md),desired_:[SDL_AudioSpec](../../modules/sdl2/sdl2-sdl_audiospec.md) Ptr,obtained_:[SDL_AudioSpec](../../modules/sdl2/sdl2-sdl_audiospec.md) Ptr,allowed_changes_:[Int](../../modules/wonkey/wonkey-types-int.md) )

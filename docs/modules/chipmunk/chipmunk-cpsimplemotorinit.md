@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSimpleMotorInit_
+##### Function cpSimpleMotorInit:[cpSimpleMotor](../../modules/chipmunk/chipmunk-cpsimplemotor.md)( joint:[cpSimpleMotor](../../modules/chipmunk/chipmunk-cpsimplemotor.md),a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),rate:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

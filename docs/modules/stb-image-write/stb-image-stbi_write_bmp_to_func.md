@@ -1,0 +1,2 @@
+_[stb-image-write](../../modules/stb-image-write/stb-image-write-module.md):[stb.image](stb:stb-image.md).stbi\_write\_bmp\_to\_func_
+##### Function stbi\_write\_bmp\_to\_func:[Int](../../modules/wonkey/wonkey-types-int.md)( func:[stbi_write_func](../../modules/stb-image-write/stb-image-stbi_write_func.md),context:Void Ptr,w:[Int](../../modules/wonkey/wonkey-types-int.md),h:[Int](../../modules/wonkey/wonkey-types-int.md),comp:[Int](../../modules/wonkey/wonkey-types-int.md),data:Void Ptr )

@@ -1,0 +1,2 @@
+_[gles20](../../modules/gles20/gles20-module.md):[gles20](../../modules/gles20/gles20-module.md).glGetActiveAttrib_
+##### Function glGetActiveAttrib:Void( program_:[GLuint](../../modules/gles20/gles20-gluint.md),index_:[GLuint](../../modules/gles20/gles20-gluint.md),bufsize_:[GLsizei](../../modules/gles20/gles20-glsizei.md),length_:[GLsizei](../../modules/gles20/gles20-glsizei.md) Ptr,size_:[GLint](../../modules/gles20/gles20-glint.md) Ptr,type_:[GLenum](../../modules/gles20/gles20-glenum.md) Ptr,name_:[GLchar](../../modules/gles20/gles20-glchar.md) Ptr )

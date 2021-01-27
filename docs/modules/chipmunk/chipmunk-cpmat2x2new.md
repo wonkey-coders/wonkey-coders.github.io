@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpMat2x2New_
+##### Function cpMat2x2New:[cpMat2x2](../../modules/chipmunk/chipmunk-cpmat2x2.md)( a:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),b:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),c:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),d:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

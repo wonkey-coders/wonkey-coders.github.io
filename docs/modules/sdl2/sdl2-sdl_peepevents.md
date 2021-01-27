@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_PeepEvents_
+##### Function SDL\_PeepEvents:[Int](../../modules/wonkey/wonkey-types-int.md)( events_:[SDL_Event](../../modules/sdl2/sdl2-sdl_event.md) Ptr,numevents_:[Int](../../modules/wonkey/wonkey-types-int.md),action_:[SDL_eventaction](../../modules/sdl2/sdl2-sdl_eventaction.md),minType_:[Int](../../modules/wonkey/wonkey-types-int.md),maxType_:[Int](../../modules/wonkey/wonkey-types-int.md) )

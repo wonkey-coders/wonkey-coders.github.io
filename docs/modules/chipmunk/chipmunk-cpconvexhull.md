@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpConvexHull_
+##### Function cpConvexHull:[Int](../../modules/wonkey/wonkey-types-int.md)( count:[Int](../../modules/wonkey/wonkey-types-int.md),verts:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) Ptr,result:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) Ptr,first:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,tol:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

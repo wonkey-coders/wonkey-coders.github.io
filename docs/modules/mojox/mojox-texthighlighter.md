@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).TextHighlighter_
+##### Alias TextHighlighter:[Int](../../modules/wonkey/wonkey-types-int.md)([String](../../modules/wonkey/wonkey-types-string.md),[Byte](../../modules/wonkey/wonkey-types-byte.md)[],[Int](../../modules/wonkey/wonkey-types-int.md),[Int](../../modules/wonkey/wonkey-types-int.md),[Int](../../modules/wonkey/wonkey-types-int.md))

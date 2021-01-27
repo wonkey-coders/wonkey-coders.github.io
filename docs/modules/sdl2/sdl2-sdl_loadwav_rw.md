@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_LoadWAV\_RW_
+##### Function SDL\_LoadWAV\_RW:[SDL_AudioSpec](../../modules/sdl2/sdl2-sdl_audiospec.md) Ptr( src_:[SDL_RWops](../../modules/sdl2/sdl2-sdl_rwops.md) Ptr,freesrc_:[Int](../../modules/wonkey/wonkey-types-int.md),spec_:[SDL_AudioSpec](../../modules/sdl2/sdl2-sdl_audiospec.md) Ptr,audio_buf_:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr Ptr,audio_len_:[UInt](../../modules/wonkey/wonkey-types-uint.md) Ptr )

@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).[Fts5ExtensionApi](../../modules/sqlite/sqlite-fts5extensionapi.md).xPhraseNext_
+##### Field xPhraseNext:Void([Fts5Context](../../modules/sqlite/sqlite-fts5context.md) Ptr,[Fts5PhraseIter](../../modules/sqlite/sqlite-fts5phraseiter.md) Ptr,[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,[Int](../../modules/wonkey/wonkey-types-int.md) Ptr)

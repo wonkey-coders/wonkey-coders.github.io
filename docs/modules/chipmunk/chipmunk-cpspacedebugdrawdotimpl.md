@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpaceDebugDrawDotImpl_
+##### Alias cpSpaceDebugDrawDotImpl:Void([cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),[cpSpaceDebugColor](../../modules/chipmunk/chipmunk-cpspacedebugcolor.md),[cpDataPointer](../../modules/chipmunk/chipmunk-cpdatapointer.md))

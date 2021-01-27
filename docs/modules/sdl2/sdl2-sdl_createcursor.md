@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_CreateCursor_
+##### Function SDL\_CreateCursor:[SDL_Cursor](../../modules/sdl2/sdl2-sdl_cursor.md) Ptr( data_:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),mask_:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),w_:[Int](../../modules/wonkey/wonkey-types-int.md),h_:[Int](../../modules/wonkey/wonkey-types-int.md),hot_x_:[Int](../../modules/wonkey/wonkey-types-int.md),hot_y_:[Int](../../modules/wonkey/wonkey-types-int.md) )

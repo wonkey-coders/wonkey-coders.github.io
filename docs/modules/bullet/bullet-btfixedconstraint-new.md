@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btFixedConstraint](../../modules/bullet/bullet-btfixedconstraint.md).New_
+##### Method New:Void( rbA:[btRigidBody](../../modules/bullet/bullet-btrigidbody.md),rbB:[btRigidBody](../../modules/bullet/bullet-btrigidbody.md),frameInA:[btTransform](../../modules/bullet/bullet-bttransform.md),frameInB:[btTransform](../../modules/bullet/bullet-bttransform.md) )

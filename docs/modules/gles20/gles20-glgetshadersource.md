@@ -1,0 +1,2 @@
+_[gles20](../../modules/gles20/gles20-module.md):[gles20](../../modules/gles20/gles20-module.md).glGetShaderSource_
+##### Function glGetShaderSource:Void( shader_:[GLuint](../../modules/gles20/gles20-gluint.md),bufsize_:[GLsizei](../../modules/gles20/gles20-glsizei.md),length_:[GLsizei](../../modules/gles20/gles20-glsizei.md) Ptr,source_:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md) )

@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).[sqlite3\_module](../../modules/sqlite/sqlite-sqlite3_module.md).xFilter_
+##### Field xFilter:[Int](../../modules/wonkey/wonkey-types-int.md)([sqlite3_vtab_cursor](../../modules/sqlite/sqlite-sqlite3_vtab_cursor.md) Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),[Int](../../modules/wonkey/wonkey-types-int.md),[sqlite3_value](../../modules/sqlite/sqlite-sqlite3_value.md) Ptr Ptr)

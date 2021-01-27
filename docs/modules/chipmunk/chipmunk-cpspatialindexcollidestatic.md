@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpatialIndexCollideStatic_
+##### Function cpSpatialIndexCollideStatic:Void( dynamicIndex:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr,staticIndex:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr,func:[cpSpatialIndexQueryFunc](../../modules/chipmunk/chipmunk-cpspatialindexqueryfunc.md),data:Void Ptr )

@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Model](../../modules/mojo3d/mojo3d-model_ext.md).CreateTerrain_
+##### Function CreateTerrain:[Model](../../modules/mojo3d/mojo3d-model.md)( heightMap:[std.graphics.Pixmap](../../modules/std/std-graphics-pixmap.md),bounds:[std.geom.Boxf](../../modules/std/std-geom-boxf.md),material:[Material](../../modules/mojo3d/mojo3d-material.md),parent:[Entity](../../modules/mojo3d/mojo3d-entity.md)=Null )

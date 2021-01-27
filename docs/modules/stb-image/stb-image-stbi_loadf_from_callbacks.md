@@ -1,0 +1,2 @@
+_[stb-image](../../modules/stb-image/stb-image-module.md):[stb.image](stb:stb-image.md).stbi\_loadf\_from\_callbacks_
+##### Function stbi\_loadf\_from\_callbacks:[Float](../../modules/wonkey/wonkey-types-float.md) Ptr( clbk:[stbi_io_callbacks](../../modules/stb-image/stb-image-stbi_io_callbacks.md) Ptr,user:Void Ptr,x:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,y:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,comp:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,req_comp:[Int](../../modules/wonkey/wonkey-types-int.md) )

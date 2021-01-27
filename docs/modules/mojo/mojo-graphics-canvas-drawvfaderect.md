@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Canvas](../../modules/mojo/mojo-graphics-canvas.md).DrawVFadeRect_
+##### Method DrawVFadeRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),w:[Float](../../modules/wonkey/wonkey-types-float.md),h:[Float](../../modules/wonkey/wonkey-types-float.md),colTop:[std.graphics.Color](../../modules/std/std-graphics-color.md),colBottom:[std.graphics.Color](../../modules/std/std-graphics-color.md) )

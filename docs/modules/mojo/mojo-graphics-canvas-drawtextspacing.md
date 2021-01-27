@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Canvas](../../modules/mojo/mojo-graphics-canvas.md).DrawTextSpacing_
+##### Method DrawTextSpacing:Void( text:[String](../../modules/wonkey/wonkey-types-string.md),tx:[Float](../../modules/wonkey/wonkey-types-float.md),ty:[Float](../../modules/wonkey/wonkey-types-float.md),spacing:[Float](../../modules/wonkey/wonkey-types-float.md),handleX:[Float](../../modules/wonkey/wonkey-types-float.md)=0,handleY:[Float](../../modules/wonkey/wonkey-types-float.md)=0 )

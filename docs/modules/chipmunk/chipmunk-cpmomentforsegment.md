@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpMomentForSegment_
+##### Function cpMomentForSegment:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md)( m:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),a:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),b:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),radius:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

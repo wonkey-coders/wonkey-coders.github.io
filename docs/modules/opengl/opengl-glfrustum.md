@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glFrustum_
+##### Function glFrustum:Void( left:[GLdouble](../../modules/opengl/opengl-gldouble.md),right:[GLdouble](../../modules/opengl/opengl-gldouble.md),bottom:[GLdouble](../../modules/opengl/opengl-gldouble.md),top:[GLdouble](../../modules/opengl/opengl-gldouble.md),zNear:[GLdouble](../../modules/opengl/opengl-gldouble.md),zFar:[GLdouble](../../modules/opengl/opengl-gldouble.md) )

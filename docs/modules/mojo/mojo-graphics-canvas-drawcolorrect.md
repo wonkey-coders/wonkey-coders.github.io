@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Canvas](../../modules/mojo/mojo-graphics-canvas.md).DrawColorRect_
+##### Method DrawColorRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),w:[Float](../../modules/wonkey/wonkey-types-float.md),h:[Float](../../modules/wonkey/wonkey-types-float.md),color1:[std.graphics.Color](../../modules/std/std-graphics-color.md)=Color.Black,color2:[std.graphics.Color](../../modules/std/std-graphics-color.md)=Color.White )

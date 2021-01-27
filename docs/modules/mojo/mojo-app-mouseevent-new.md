@@ -1,0 +1,3 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.app](../../modules/mojo/mojo-app.md).[MouseEvent](../../modules/mojo/mojo-app-mouseevent.md).New_
+##### Method New:Void( type:[EventType](../../modules/mojo/mojo-app-eventtype.md),view:[View](../../modules/mojo/mojo-app-view.md),location:[std.geom.Vec2i](../../modules/std/std-geom-vec2i.md),button:[MouseButton](../../modules/mojo/mojo-input-mousebutton.md),wheel:[std.geom.Vec2i](../../modules/std/std-geom-vec2i.md),modifiers:[Modifier](../../modules/mojo/mojo-input-modifier.md),clicks:[Int](../../modules/wonkey/wonkey-types-int.md) )
+Creates a new mouse event.

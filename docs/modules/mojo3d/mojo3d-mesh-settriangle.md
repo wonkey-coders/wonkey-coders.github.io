@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Mesh](../../modules/mojo3d/mojo3d-mesh.md).SetTriangle_
+##### Method SetTriangle:Void( index:[Int](../../modules/wonkey/wonkey-types-int.md),i0:[Int](../../modules/wonkey/wonkey-types-int.md),i1:[Int](../../modules/wonkey/wonkey-types-int.md),i2:[Int](../../modules/wonkey/wonkey-types-int.md),materialid:[Int](../../modules/wonkey/wonkey-types-int.md)=0 )

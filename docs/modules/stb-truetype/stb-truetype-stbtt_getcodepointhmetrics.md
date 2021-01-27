@@ -1,0 +1,2 @@
+_[stb-truetype](../../modules/stb-truetype/stb-truetype-module.md):[stb.truetype](stb:stb-truetype.md).stbtt\_GetCodepointHMetrics_
+##### Function stbtt\_GetCodepointHMetrics:Void( info:[stbtt_fontinfo](../../modules/stb-truetype/stb-truetype-stbtt_fontinfo.md) Ptr,codepoint:[Int](../../modules/wonkey/wonkey-types-int.md),advanceWidth:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,leftSideBearing:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr )

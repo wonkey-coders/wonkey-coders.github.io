@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpPinJointInit_
+##### Function cpPinJointInit:[cpPinJoint](../../modules/chipmunk/chipmunk-cppinjoint.md)( joint:[cpPinJoint](../../modules/chipmunk/chipmunk-cppinjoint.md),a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),anchorA:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),anchorB:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) )

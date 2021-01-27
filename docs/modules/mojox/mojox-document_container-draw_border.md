@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[document\_container](../../modules/mojox/mojox-document_container.md).draw\_border_
+##### Method draw\_border:Void( canvas:[mojo.graphics.Canvas](../../modules/mojo/mojo-graphics-canvas.md),border:[litehtml.border](../../modules/litehtml/litehtml-border.md),x:[Int](../../modules/wonkey/wonkey-types-int.md),y:[Int](../../modules/wonkey/wonkey-types-int.md),w:[Int](../../modules/wonkey/wonkey-types-int.md),h:[Int](../../modules/wonkey/wonkey-types-int.md) )

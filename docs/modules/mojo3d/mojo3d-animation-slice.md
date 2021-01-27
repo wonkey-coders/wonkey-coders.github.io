@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Animation](../../modules/mojo3d/mojo3d-animation.md).Slice_
+##### Method Slice:[Animation](../../modules/mojo3d/mojo3d-animation.md)( name:[String](../../modules/wonkey/wonkey-types-string.md),begin:[Float](../../modules/wonkey/wonkey-types-float.md),term:[Float](../../modules/wonkey/wonkey-types-float.md),mode:[AnimationMode](../../modules/mojo3d/mojo3d-animationmode.md) )

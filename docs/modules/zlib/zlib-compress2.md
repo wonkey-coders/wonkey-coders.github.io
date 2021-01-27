@@ -1,0 +1,2 @@
+_[zlib](../../modules/zlib/zlib-module.md):[zlib](../../modules/zlib/zlib-module.md).compress2_
+##### Function compress2:[Int](../../modules/wonkey/wonkey-types-int.md)( dest:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr,destLen:[z_uLong](../../modules/zlib/zlib-z_ulong.md) Ptr,source:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr,sourceLen:[UInt](../../modules/wonkey/wonkey-types-uint.md),level:[Int](../../modules/wonkey/wonkey-types-int.md) )

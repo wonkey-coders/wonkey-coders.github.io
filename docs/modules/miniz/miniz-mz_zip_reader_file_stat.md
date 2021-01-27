@@ -1,0 +1,2 @@
+_[miniz](../../modules/miniz/miniz-module.md):[miniz](../../modules/miniz/miniz-module.md).mz\_zip\_reader\_file\_stat_
+##### Function mz\_zip\_reader\_file\_stat:[Int](../../modules/wonkey/wonkey-types-int.md)( pZip:[mz_zip_archive](../../modules/miniz/miniz-mz_zip_archive.md) Ptr,file_index:[Int](../../modules/wonkey/wonkey-types-int.md),pStat:[mz_zip_archive_file_stat](../../modules/miniz/miniz-mz_zip_archive_file_stat.md) Ptr )

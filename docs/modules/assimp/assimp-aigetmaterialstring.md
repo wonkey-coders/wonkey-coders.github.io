@@ -1,0 +1,2 @@
+_[assimp](../../modules/assimp/assimp-module.md):[assimp](../../modules/assimp/assimp-module.md).aiGetMaterialString_
+##### Function aiGetMaterialString:Void( pMat:[aiMaterial](../../modules/assimp/assimp-aimaterial.md),pKey:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),type:[UInt](../../modules/wonkey/wonkey-types-uint.md),index:[UInt](../../modules/wonkey/wonkey-types-uint.md),pOut:[aiString](../../modules/assimp/assimp-aistring.md) Ptr )

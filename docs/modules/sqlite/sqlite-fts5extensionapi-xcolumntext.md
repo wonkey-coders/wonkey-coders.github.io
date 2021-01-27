@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).[Fts5ExtensionApi](../../modules/sqlite/sqlite-fts5extensionapi.md).xColumnText_
+##### Field xColumnText:[Int](../../modules/wonkey/wonkey-types-int.md)([Fts5Context](../../modules/sqlite/sqlite-fts5context.md) Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),[libc.const_char_t](../../modules/libc/libc-const_char_t.md) Ptr Ptr,[Int](../../modules/wonkey/wonkey-types-int.md) Ptr)

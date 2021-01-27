@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[TabButton](../../modules/mojox/mojox-tabbutton.md).New_
+##### Method New:Void( text:[String](../../modules/wonkey/wonkey-types-string.md),icon:[mojo.graphics.Image](../../modules/mojo/mojo-graphics-image.md),view:[mojo.app.View](../../modules/mojo/mojo-app-view.md),closable:[Bool](../../modules/wonkey/wonkey-types-bool.md) )

@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btRigidBodyConstructionInfo](../../modules/bullet/bullet-btrigidbodyconstructioninfo.md).New_
+##### Method New:Void( mass:[btScalar](../../modules/bullet/bullet-btscalar.md),motionState:[btMotionState](../../modules/bullet/bullet-btmotionstate.md),collisionShape:[btCollisionShape](../../modules/bullet/bullet-btcollisionshape.md),localInertia:[btVector3](../../modules/bullet/bullet-btvector3.md)=New btVector3(0,0,0) )

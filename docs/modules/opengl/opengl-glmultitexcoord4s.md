@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glMultiTexCoord4s_
+##### Function glMultiTexCoord4s:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),s:[GLshort](../../modules/opengl/opengl-glshort.md),t:[GLshort](../../modules/opengl/opengl-glshort.md),r:[GLshort](../../modules/opengl/opengl-glshort.md),q:[GLshort](../../modules/opengl/opengl-glshort.md) )

@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpBoxShapeInit2_
+##### Function cpBoxShapeInit2:[cpPolyShape](../../modules/chipmunk/chipmunk-cppolyshape.md)( poly:[cpPolyShape](../../modules/chipmunk/chipmunk-cppolyshape.md),body:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),box:[cpBB](../../modules/chipmunk/chipmunk-cpbb.md),radius:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

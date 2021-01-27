@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpaceAddCollisionHandler_
+##### Function cpSpaceAddCollisionHandler:[cpCollisionHandler](../../modules/chipmunk/chipmunk-cpcollisionhandler.md)( space:[cpSpace](../../modules/chipmunk/chipmunk-cpspace.md),a:[cpCollisionType](../../modules/chipmunk/chipmunk-cpcollisiontype.md),b:[cpCollisionType](../../modules/chipmunk/chipmunk-cpcollisiontype.md) )

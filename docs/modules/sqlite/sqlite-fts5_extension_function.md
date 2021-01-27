@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).fts5\_extension\_function_
+##### Alias fts5\_extension\_function:Void([Fts5ExtensionApi](../../modules/sqlite/sqlite-fts5extensionapi.md) Ptr,[Fts5Context](../../modules/sqlite/sqlite-fts5context.md) Ptr,[sqlite3_context](../../modules/sqlite/sqlite-sqlite3_context.md) Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),[sqlite3_value](../../modules/sqlite/sqlite-sqlite3_value.md) Ptr Ptr)

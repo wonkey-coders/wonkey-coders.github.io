@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpPivotJointInit_
+##### Function cpPivotJointInit:[cpPivotJoint](../../modules/chipmunk/chipmunk-cppivotjoint.md)( joint:[cpPivotJoint](../../modules/chipmunk/chipmunk-cppivotjoint.md),a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),anchorA:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),anchorB:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) )

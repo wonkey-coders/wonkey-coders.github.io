@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glFramebufferRenderbuffer_
+##### Function glFramebufferRenderbuffer:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),attachment:[GLenum](../../modules/opengl/opengl-glenum.md),renderbuffertarget:[GLenum](../../modules/opengl/opengl-glenum.md),renderbuffer:[GLuint](../../modules/opengl/opengl-gluint.md) )

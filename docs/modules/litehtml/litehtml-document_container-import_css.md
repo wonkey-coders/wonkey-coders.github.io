@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document\_container](../../modules/litehtml/litehtml-document_container.md).import\_css_
+##### Method import\_css:[String](../../modules/wonkey/wonkey-types-string.md)( url:[String](../../modules/wonkey/wonkey-types-string.md),baseurl:[String](../../modules/wonkey/wonkey-types-string.md) )

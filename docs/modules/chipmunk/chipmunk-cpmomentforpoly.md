@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpMomentForPoly_
+##### Function cpMomentForPoly:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md)( m:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),count:[Int](../../modules/wonkey/wonkey-types-int.md),verts:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md) Ptr,offset:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),radius:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

@@ -1,0 +1,2 @@
+_[tinyxml2](../../modules/tinyxml2/tinyxml2-module.md):[tinyxml2](../../modules/tinyxml2/tinyxml2-module.md).[XMLElement](../../modules/tinyxml2/tinyxml2-xmlelement.md).QueryDoubleAttribute_
+##### Method QueryDoubleAttribute:[XMLError](../../modules/tinyxml2/tinyxml2-xmlerror.md)( name:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),value:[Double](../../modules/wonkey/wonkey-types-double.md) Ptr )

@@ -1,0 +1,2 @@
+_[stb-image](../../modules/stb-image/stb-image-module.md):[stb.image](stb:stb-image.md).stbi\_loadf\_from\_memory_
+##### Function stbi\_loadf\_from\_memory:[Float](../../modules/wonkey/wonkey-types-float.md) Ptr( buffer:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr,len:[Int](../../modules/wonkey/wonkey-types-int.md),x:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,y:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,comp:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,req_comp:[Int](../../modules/wonkey/wonkey-types-int.md) )

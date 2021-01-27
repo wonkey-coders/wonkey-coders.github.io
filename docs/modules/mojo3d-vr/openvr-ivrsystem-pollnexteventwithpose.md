@@ -1,0 +1,2 @@
+_[mojo3d-vr](../../modules/mojo3d-vr/mojo3d-vr-module.md):[openvr](openvr:).[IVRSystem](openvr:openvr-ivrsystem.md).PollNextEventWithPose_
+##### Method PollNextEventWithPose:[Bool](../../modules/wonkey/wonkey-types-bool.md)( oRigin:[ETrackingUniverseOrigin](../../modules/mojo3d-vr/openvr-etrackinguniverseorigin.md),pEvent:[VREvent_t](../../modules/mojo3d-vr/openvr-vrevent_t.md) Ptr,uncbVREvent:[UInt](../../modules/wonkey/wonkey-types-uint.md),pTrackedDevicePose:[TrackedDevicePose_t](../../modules/mojo3d-vr/openvr-trackeddevicepose_t.md) Ptr )

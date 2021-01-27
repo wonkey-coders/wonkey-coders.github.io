@@ -1,0 +1,5 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[ImageFont](../../modules/mojo/mojo-graphics-imagefont.md).Load_
+##### Function Load:[ImageFont](../../modules/mojo/mojo-graphics-imagefont.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),charWidth:[Int](../../modules/wonkey/wonkey-types-int.md),charHeight:[Int](../../modules/wonkey/wonkey-types-int.md),firstChar:[Int](../../modules/wonkey/wonkey-types-int.md)=32,numChars:[Int](../../modules/wonkey/wonkey-types-int.md)=96,padding:[Int](../../modules/wonkey/wonkey-types-int.md)=1,shader:[Shader](../../modules/mojo/mojo-graphics-shader.md)=Null,textureFlags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=TextureFlags.FilterMipmap )
+##### Function Load:[Font](../../modules/mojo/mojo-graphics-font.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),size:[Float](../../modules/wonkey/wonkey-types-float.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md)=Null,textureFlags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=TextureFlags.FilterMipmap )
+
+Loads a font from a file.

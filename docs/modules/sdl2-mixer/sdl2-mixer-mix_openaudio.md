@@ -1,0 +1,2 @@
+_[sdl2-mixer](../../modules/sdl2-mixer/sdl2-mixer-module.md):[sdl2.mixer](../../modules/sdl2/sdl2-mixer.md).Mix\_OpenAudio_
+##### Function Mix\_OpenAudio:[Int](../../modules/wonkey/wonkey-types-int.md)( frequency:[Int](../../modules/wonkey/wonkey-types-int.md),format:[UShort](../../modules/wonkey/wonkey-types-ushort.md),channels:[Int](../../modules/wonkey/wonkey-types-int.md),chunksize:[Int](../../modules/wonkey/wonkey-types-int.md) )

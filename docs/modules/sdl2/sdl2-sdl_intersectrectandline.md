@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_IntersectRectAndLine_
+##### Function SDL\_IntersectRectAndLine:[SDL_bool](../../modules/sdl2/sdl2-sdl_bool.md)( rect_:[SDL_Rect](../../modules/sdl2/sdl2-sdl_rect.md) Ptr,X1_:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,Y1_:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,X2_:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,Y2_:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr )

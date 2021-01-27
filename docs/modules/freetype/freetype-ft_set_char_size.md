@@ -1,0 +1,2 @@
+_[freetype](../../modules/freetype/freetype-module.md):[freetype](../../modules/freetype/freetype-module.md).FT\_Set\_Char\_Size_
+##### Function FT\_Set\_Char\_Size:[FT_Error](../../modules/freetype/freetype-ft_error.md)( face:[FT_Face](../../modules/freetype/freetype-ft_face.md),char_width:[FT_F26Dot6](../../modules/freetype/freetype-ft_f26dot6.md),char_height:[FT_F26Dot6](../../modules/freetype/freetype-ft_f26dot6.md),horz_resolution:[FT_UInt](../../modules/freetype/freetype-ft_uint.md),vert_resolution:[FT_UInt](../../modules/freetype/freetype-ft_uint.md) )

@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[World](../../modules/mojo3d/mojo3d-world.md).RayCast_
+##### Method RayCast:[RayCastResult](../../modules/mojo3d/mojo3d-raycastresult.md)( rayFrom:[std.geom.Vec3f](../../modules/std/std-geom-vec3f.md),rayTo:[std.geom.Vec3f](../../modules/std/std-geom-vec3f.md),collisionMask:[Int](../../modules/wonkey/wonkey-types-int.md) )

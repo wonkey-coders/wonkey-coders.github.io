@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.audio](../../modules/mojo/mojo-audio.md).[Sound](../../modules/mojo/mojo-audio-sound.md).Draw_
+##### Method Draw:Void( canvas:[Canvas](../../modules/mojo/mojo-graphics-canvas.md),x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),width:[Float](../../modules/wonkey/wonkey-types-float.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),showText:[Bool](../../modules/wonkey/wonkey-types-bool.md)=true )

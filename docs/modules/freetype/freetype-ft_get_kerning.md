@@ -1,0 +1,2 @@
+_[freetype](../../modules/freetype/freetype-module.md):[freetype](../../modules/freetype/freetype-module.md).FT\_Get\_Kerning_
+##### Function FT\_Get\_Kerning:Void( face:[FT_Face](../../modules/freetype/freetype-ft_face.md),left_glyph:[FT_UInt](../../modules/freetype/freetype-ft_uint.md),right_glyph:[FT_UInt](../../modules/freetype/freetype-ft_uint.md),kern_mode:[FT_UInt](../../modules/freetype/freetype-ft_uint.md),akerning:[FT_Vector](../../modules/freetype/freetype-ft_vector.md) Ptr )

@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_trace\_v2_
+##### Function sqlite3\_trace\_v2:[Int](../../modules/wonkey/wonkey-types-int.md)( :[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,uMask:[UInt](../../modules/wonkey/wonkey-types-uint.md),xCallback:[Int](../../modules/wonkey/wonkey-types-int.md)([UInt](../../modules/wonkey/wonkey-types-uint.md),Void Ptr,Void Ptr,Void Ptr),pCtx:Void Ptr )

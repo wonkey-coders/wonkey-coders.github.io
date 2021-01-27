@@ -1,0 +1,2 @@
+_[sokol](../../modules/sokol/sokol-module.md):[sokol](../../modules/sokol/sokol-module.md).sg\_apply\_scissor\_rect_
+##### Function sg\_apply\_scissor\_rect:Void( x:[Int](../../modules/wonkey/wonkey-types-int.md),y:[Int](../../modules/wonkey/wonkey-types-int.md),width:[Int](../../modules/wonkey/wonkey-types-int.md),height:[Int](../../modules/wonkey/wonkey-types-int.md),origin_top_left:[Bool](../../modules/wonkey/wonkey-types-bool.md) )

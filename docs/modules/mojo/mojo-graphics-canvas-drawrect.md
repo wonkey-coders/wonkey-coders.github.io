@@ -1,0 +1,18 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Canvas](../../modules/mojo/mojo-graphics-canvas.md).DrawRect_
+##### Method DrawRect:Void( rect:[std.geom.Rectf](../../modules/std/std-geom-rectf.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md) )
+##### Method DrawRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),width:[Float](../../modules/wonkey/wonkey-types-float.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md) )
+##### Method DrawRect:Void( rect:[std.geom.Rectf](../../modules/std/std-geom-rectf.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md),material:[UniformBlock](../../modules/mojo/mojo-graphics-uniformblock.md) )
+##### Method DrawRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),width:[Float](../../modules/wonkey/wonkey-types-float.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md),material:[UniformBlock](../../modules/mojo/mojo-graphics-uniformblock.md) )
+##### Method DrawRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),w:[Float](../../modules/wonkey/wonkey-types-float.md),h:[Float](../../modules/wonkey/wonkey-types-float.md) )
+##### Method DrawRect:Void( rect:[std.geom.Rectf](../../modules/std/std-geom-rectf.md) )
+##### Method DrawRect:Void( rect:[std.geom.Rectf](../../modules/std/std-geom-rectf.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md) )
+##### Method DrawRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),width:[Float](../../modules/wonkey/wonkey-types-float.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md) )
+##### Method DrawRect:Void( rect:[std.geom.Rectf](../../modules/std/std-geom-rectf.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),srcRect:[std.geom.Recti](../../modules/std/std-geom-recti.md) )
+##### Method DrawRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),width:[Float](../../modules/wonkey/wonkey-types-float.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),srcX:[Int](../../modules/wonkey/wonkey-types-int.md),srcY:[Int](../../modules/wonkey/wonkey-types-int.md) )
+##### Method DrawRect:Void( x:[Float](../../modules/wonkey/wonkey-types-float.md),y:[Float](../../modules/wonkey/wonkey-types-float.md),width:[Float](../../modules/wonkey/wonkey-types-float.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),srcImage:[Image](../../modules/mojo/mojo-graphics-image.md),srcX:[Int](../../modules/wonkey/wonkey-types-int.md),srcY:[Int](../../modules/wonkey/wonkey-types-int.md),srcWidth:[Int](../../modules/wonkey/wonkey-types-int.md),srcHeight:[Int](../../modules/wonkey/wonkey-types-int.md) )
+
+Draws a rectangle.
+
+Draws a rectangle in the current [Color](mojo-graphics-canvas-color.md) using the current [BlendMode](mojo-graphics-canvas-blendmode.md).
+
+The rectangle vertex coordinates are also transform by the current [Matrix](mojo-graphics-canvas-matrix.md).

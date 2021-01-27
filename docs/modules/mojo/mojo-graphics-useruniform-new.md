@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[UserUniform](../../modules/mojo/mojo-graphics-useruniform.md).New_
+##### Method New:Void( names:[String](../../modules/wonkey/wonkey-types-string.md)[],index:[Int](../../modules/wonkey/wonkey-types-int.md),callback:Void([UserUniform](../../modules/mojo/mojo-graphics-useruniform.md),[UniformBlock](../../modules/mojo/mojo-graphics-uniformblock.md)) )

@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glBitmap_
+##### Function glBitmap:Void( width:[GLsizei](../../modules/opengl/opengl-glsizei.md),height:[GLsizei](../../modules/opengl/opengl-glsizei.md),xorig:[GLfloat](../../modules/opengl/opengl-glfloat.md),yorig:[GLfloat](../../modules/opengl/opengl-glfloat.md),xmove:[GLfloat](../../modules/opengl/opengl-glfloat.md),ymove:[GLfloat](../../modules/opengl/opengl-glfloat.md),bitmap:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md) )

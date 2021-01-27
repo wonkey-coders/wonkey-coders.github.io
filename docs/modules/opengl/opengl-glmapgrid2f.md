@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glMapGrid2f_
+##### Function glMapGrid2f:Void( un:[GLint](../../modules/opengl/opengl-glint.md),u1:[GLfloat](../../modules/opengl/opengl-glfloat.md),u2:[GLfloat](../../modules/opengl/opengl-glfloat.md),vn:[GLint](../../modules/opengl/opengl-glint.md),v1:[GLfloat](../../modules/opengl/opengl-glfloat.md),v2:[GLfloat](../../modules/opengl/opengl-glfloat.md) )

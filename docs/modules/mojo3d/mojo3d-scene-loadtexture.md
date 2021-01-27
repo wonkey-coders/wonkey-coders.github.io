@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Scene](../../modules/mojo3d/mojo3d-scene.md).LoadTexture_
+##### Method LoadTexture:[mojo.graphics.Texture](../../modules/mojo/mojo-graphics-texture.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),flags:[mojo.graphics.TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=TextureFlags.FilterMipmap,flipNormalY:[Bool](../../modules/wonkey/wonkey-types-bool.md)=false )

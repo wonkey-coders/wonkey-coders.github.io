@@ -1,0 +1,2 @@
+_[stb-image-write](../../modules/stb-image-write/stb-image-write-module.md):[stb.image](stb:stb-image.md).stbi\_write\_hdr_
+##### Function stbi\_write\_hdr:[Int](../../modules/wonkey/wonkey-types-int.md)( filename:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),w:[Int](../../modules/wonkey/wonkey-types-int.md),h:[Int](../../modules/wonkey/wonkey-types-int.md),comp:[Int](../../modules/wonkey/wonkey-types-int.md),data:Void Ptr )

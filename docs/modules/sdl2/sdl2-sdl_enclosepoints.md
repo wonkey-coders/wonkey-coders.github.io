@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_EnclosePoints_
+##### Function SDL\_EnclosePoints:[SDL_bool](../../modules/sdl2/sdl2-sdl_bool.md)( points_:[SDL_Point](../../modules/sdl2/sdl2-sdl_point.md) Ptr,count_:[Int](../../modules/wonkey/wonkey-types-int.md),clip_:[SDL_Rect](../../modules/sdl2/sdl2-sdl_rect.md) Ptr,result_:[SDL_Rect](../../modules/sdl2/sdl2-sdl_rect.md) Ptr )

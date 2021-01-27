@@ -1,0 +1,3 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Canvas](../../modules/mojo/mojo-graphics-canvas.md).DrawTextBold_
+##### Method DrawTextBold:Void( text:[String](../../modules/wonkey/wonkey-types-string.md),tx:[Float](../../modules/wonkey/wonkey-types-float.md),ty:[Float](../../modules/wonkey/wonkey-types-float.md) )
+##### Method DrawTextBold:Void( text:[String](../../modules/wonkey/wonkey-types-string.md),tx:[Float](../../modules/wonkey/wonkey-types-float.md),ty:[Float](../../modules/wonkey/wonkey-types-float.md),bold:[Float](../../modules/wonkey/wonkey-types-float.md),handleX:[Float](../../modules/wonkey/wonkey-types-float.md)=0,handleY:[Float](../../modules/wonkey/wonkey-types-float.md)=0 )

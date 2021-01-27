@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glCopyTexImage1D_
+##### Function glCopyTexImage1D:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),level:[GLint](../../modules/opengl/opengl-glint.md),internalFormat:[GLenum](../../modules/opengl/opengl-glenum.md),x:[GLint](../../modules/opengl/opengl-glint.md),y:[GLint](../../modules/opengl/opengl-glint.md),width:[GLsizei](../../modules/opengl/opengl-glsizei.md),border:[GLint](../../modules/opengl/opengl-glint.md) )

@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSlideJointNew_
+##### Function cpSlideJointNew:[cpConstraint](../../modules/chipmunk/chipmunk-cpconstraint.md)( a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),anchorA:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),anchorB:[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),min:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),max:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

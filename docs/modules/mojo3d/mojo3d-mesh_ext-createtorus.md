@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Mesh](../../modules/mojo3d/mojo3d-mesh_ext.md).CreateTorus_
+##### Function CreateTorus:[Mesh](../../modules/mojo3d/mojo3d-mesh.md)( outerRadius:[Float](../../modules/wonkey/wonkey-types-float.md),innerRadius:[Float](../../modules/wonkey/wonkey-types-float.md),outerSegs:[Int](../../modules/wonkey/wonkey-types-int.md)=24,innerSegs:[Int](../../modules/wonkey/wonkey-types-int.md)=12 )

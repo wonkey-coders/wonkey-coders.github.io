@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btDiscreteDynamicsWorld](../../modules/bullet/bullet-btdiscretedynamicsworld.md).New_
+##### Method New:Void( dispatcher:[btDispatcher](../../modules/bullet/bullet-btdispatcher.md),pairCache:[btBroadphaseInterface](../../modules/bullet/bullet-btbroadphaseinterface.md),contraintSolver:[btConstraintSolver](../../modules/bullet/bullet-btconstraintsolver.md),collisionConfiguration:[btCollisionConfiguration](../../modules/bullet/bullet-btcollisionconfiguration.md) )

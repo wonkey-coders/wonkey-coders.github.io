@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glVertexAttribPointer_
+##### Function glVertexAttribPointer:Void( index:[GLuint](../../modules/opengl/opengl-gluint.md),size:[GLint](../../modules/opengl/opengl-glint.md),type:[GLenum](../../modules/opengl/opengl-glenum.md),normalized:[GLboolean](../../modules/opengl/opengl-glboolean.md),stride:[GLsizei](../../modules/opengl/opengl-glsizei.md),pointer:Void Ptr )

@@ -1,0 +1,3 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.app](../../modules/mojo/mojo-app.md).[AppInstance](../../modules/mojo/mojo-app-appinstance.md).Deactivated_
+##### Field Deactivated:Void()
+Invoked when app is deactivated.

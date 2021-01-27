@@ -1,0 +1,3 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btMatrix3x3](../../modules/bullet/bullet-btmatrix3x3.md).New_
+##### Method New:Void(  )
+##### Method New:Void( xx:[btScalar](../../modules/bullet/bullet-btscalar.md),xy:[btScalar](../../modules/bullet/bullet-btscalar.md),xz:[btScalar](../../modules/bullet/bullet-btscalar.md),yx:[btScalar](../../modules/bullet/bullet-btscalar.md),yy:[btScalar](../../modules/bullet/bullet-btscalar.md),yz:[btScalar](../../modules/bullet/bullet-btscalar.md),zx:[btScalar](../../modules/bullet/bullet-btscalar.md),zy:[btScalar](../../modules/bullet/bullet-btscalar.md),zz:[btScalar](../../modules/bullet/bullet-btscalar.md) )

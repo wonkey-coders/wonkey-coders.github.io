@@ -1,0 +1,2 @@
+_[openal](../../modules/openal/openal-module.md):[openal](../../modules/openal/openal-module.md).alSource3i_
+##### Function alSource3i:Void( source:[ALuint](../../modules/openal/openal-aluint.md),param:[ALenum](../../modules/openal/openal-alenum.md),value1:[ALint](../../modules/openal/openal-alint.md),value2:[ALint](../../modules/openal/openal-alint.md),value3:[ALint](../../modules/openal/openal-alint.md) )

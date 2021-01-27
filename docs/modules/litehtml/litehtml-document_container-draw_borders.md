@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document\_container](../../modules/litehtml/litehtml-document_container.md).draw\_borders_
+##### Method draw\_borders:Void( hdc:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md),bordrs:[borders](../../modules/litehtml/litehtml-borders.md) Ptr,pos:[position](../../modules/litehtml/litehtml-position.md) Ptr,root:[Bool](../../modules/wonkey/wonkey-types-bool.md) )

@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_GetClosestDisplayMode_
+##### Function SDL\_GetClosestDisplayMode:[SDL_DisplayMode](../../modules/sdl2/sdl2-sdl_displaymode.md) Ptr( displayIndex_:[Int](../../modules/wonkey/wonkey-types-int.md),mode_:[SDL_DisplayMode](../../modules/sdl2/sdl2-sdl_displaymode.md) Ptr,closest_:[SDL_DisplayMode](../../modules/sdl2/sdl2-sdl_displaymode.md) Ptr )

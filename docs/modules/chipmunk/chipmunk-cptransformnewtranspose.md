@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpTransformNewTranspose_
+##### Function cpTransformNewTranspose:[cpTransform](../../modules/chipmunk/chipmunk-cptransform.md)( a:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),c:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),tx:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),b:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),d:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),ty:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

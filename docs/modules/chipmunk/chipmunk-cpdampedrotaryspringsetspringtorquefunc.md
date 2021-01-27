@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpDampedRotarySpringSetSpringTorqueFunc_
+##### Function cpDampedRotarySpringSetSpringTorqueFunc:Void( constraint:[cpConstraint](../../modules/chipmunk/chipmunk-cpconstraint.md),springTorqueFunc:[cpDampedRotarySpringTorqueFunc](../../modules/chipmunk/chipmunk-cpdampedrotaryspringtorquefunc.md) )

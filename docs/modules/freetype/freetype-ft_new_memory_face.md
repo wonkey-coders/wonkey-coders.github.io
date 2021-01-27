@@ -1,0 +1,2 @@
+_[freetype](../../modules/freetype/freetype-module.md):[freetype](../../modules/freetype/freetype-module.md).FT\_New\_Memory\_Face_
+##### Function FT\_New\_Memory\_Face:[FT_Error](../../modules/freetype/freetype-ft_error.md)( library:[FT_Library](../../modules/freetype/freetype-ft_library.md),file_base:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr,file_size:[FT_Long](../../modules/freetype/freetype-ft_long.md),file_index:[FT_Long](../../modules/freetype/freetype-ft_long.md),aface:[FT_Face](../../modules/freetype/freetype-ft_face.md) Ptr )

@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Texture](../../modules/mojo/mojo-graphics-texture.md).Load_
+##### Function Load:[Texture](../../modules/mojo/mojo-graphics-texture.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),flags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=TextureFlags.FilterMipmap,flipNormalY:[Bool](../../modules/wonkey/wonkey-types-bool.md)=false )

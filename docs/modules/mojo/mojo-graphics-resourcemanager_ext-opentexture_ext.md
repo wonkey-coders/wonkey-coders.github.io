@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[ResourceManager](../../modules/mojo/mojo-graphics-resourcemanager_ext.md).OpenTexture_
+##### Method OpenTexture:[Texture](../../modules/mojo/mojo-graphics-texture.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),flags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=Null )

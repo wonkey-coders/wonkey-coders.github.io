@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glGetFramebufferAttachmentParameteriv_
+##### Function glGetFramebufferAttachmentParameteriv:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),attachment:[GLenum](../../modules/opengl/opengl-glenum.md),pname:[GLenum](../../modules/opengl/opengl-glenum.md),params:[GLint](../../modules/opengl/opengl-glint.md) Ptr )

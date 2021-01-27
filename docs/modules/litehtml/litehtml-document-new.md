@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document](../../modules/litehtml/litehtml-document.md).New_
+##### Method New:Void( source:[String](../../modules/wonkey/wonkey-types-string.md),container:[document_container](../../modules/litehtml/litehtml-document_container.md),context:[context](../../modules/litehtml/litehtml-context.md) )

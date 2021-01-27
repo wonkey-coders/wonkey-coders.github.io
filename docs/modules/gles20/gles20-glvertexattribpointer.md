@@ -1,0 +1,2 @@
+_[gles20](../../modules/gles20/gles20-module.md):[gles20](../../modules/gles20/gles20-module.md).glVertexAttribPointer_
+##### Function glVertexAttribPointer:Void( indx_:[GLuint](../../modules/gles20/gles20-gluint.md),size_:[GLint](../../modules/gles20/gles20-glint.md),type_:[GLenum](../../modules/gles20/gles20-glenum.md),normalized_:[GLboolean](../../modules/gles20/gles20-glboolean.md),stride_:[GLsizei](../../modules/gles20/gles20-glsizei.md),ptr_:[GLvoid](../../modules/gles20/gles20-glvoid.md) Ptr )

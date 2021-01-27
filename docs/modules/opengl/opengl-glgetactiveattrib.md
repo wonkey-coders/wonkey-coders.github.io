@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glGetActiveAttrib_
+##### Function glGetActiveAttrib:Void( program:[GLuint](../../modules/opengl/opengl-gluint.md),index:[GLuint](../../modules/opengl/opengl-gluint.md),maxLength:[GLsizei](../../modules/opengl/opengl-glsizei.md),length:[GLsizei](../../modules/opengl/opengl-glsizei.md) Ptr,size:[GLint](../../modules/opengl/opengl-glint.md) Ptr,type:[GLenum](../../modules/opengl/opengl-glenum.md) Ptr,name:[GLchar](../../modules/opengl/opengl-glchar.md) Ptr )

@@ -1,0 +1,2 @@
+_[miniz](../../modules/miniz/miniz-module.md):[miniz](../../modules/miniz/miniz-module.md).mz\_zip\_reader\_extract\_file\_to\_mem_
+##### Function mz\_zip\_reader\_extract\_file\_to\_mem:[Int](../../modules/wonkey/wonkey-types-int.md)( pZip:[mz_zip_archive](../../modules/miniz/miniz-mz_zip_archive.md) Ptr,pFilename:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),pBuf:Void Ptr,buf_size:[Int](../../modules/wonkey/wonkey-types-int.md),flags:[Int](../../modules/wonkey/wonkey-types-int.md) )

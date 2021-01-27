@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_rtree\_query\_callback_
+##### Function sqlite3\_rtree\_query\_callback:[Int](../../modules/wonkey/wonkey-types-int.md)( db:[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zQueryFunc:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),xQueryFunc:[Int](../../modules/wonkey/wonkey-types-int.md)([sqlite3_rtree_query_info](../../modules/sqlite/sqlite-sqlite3_rtree_query_info.md) Ptr),pContext:Void Ptr,xDestructor:Void(Void Ptr) )

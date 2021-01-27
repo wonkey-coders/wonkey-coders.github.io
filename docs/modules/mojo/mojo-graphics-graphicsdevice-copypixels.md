@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[GraphicsDevice](../../modules/mojo/mojo-graphics-graphicsdevice.md).CopyPixels_
+##### Method CopyPixels:Void( rect:[std.geom.Recti](../../modules/std/std-geom-recti.md),pixmap:[std.graphics.Pixmap](../../modules/std/std-graphics-pixmap.md),dstx:[Int](../../modules/wonkey/wonkey-types-int.md),dsty:[Int](../../modules/wonkey/wonkey-types-int.md) )

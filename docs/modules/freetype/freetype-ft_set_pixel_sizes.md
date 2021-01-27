@@ -1,0 +1,2 @@
+_[freetype](../../modules/freetype/freetype-module.md):[freetype](../../modules/freetype/freetype-module.md).FT\_Set\_Pixel\_Sizes_
+##### Function FT\_Set\_Pixel\_Sizes:[FT_Error](../../modules/freetype/freetype-ft_error.md)( face:[FT_Face](../../modules/freetype/freetype-ft_face.md),pixel_width:[FT_UInt](../../modules/freetype/freetype-ft_uint.md),pixel_height:[FT_UInt](../../modules/freetype/freetype-ft_uint.md) )

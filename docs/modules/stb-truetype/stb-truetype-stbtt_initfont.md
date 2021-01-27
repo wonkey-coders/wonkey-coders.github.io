@@ -1,0 +1,2 @@
+_[stb-truetype](../../modules/stb-truetype/stb-truetype-module.md):[stb.truetype](stb:stb-truetype.md).stbtt\_InitFont_
+##### Function stbtt\_InitFont:[Int](../../modules/wonkey/wonkey-types-int.md)( info:[stbtt_fontinfo](../../modules/stb-truetype/stb-truetype-stbtt_fontinfo.md) Ptr,data:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr,offset:[Int](../../modules/wonkey/wonkey-types-int.md) )

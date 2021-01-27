@@ -1,0 +1,2 @@
+_[theoraplayer](../../modules/theoraplayer/theoraplayer-module.md):[theoraplayer](../../modules/theoraplayer/theoraplayer-module.md).[VideoClip](../../modules/theoraplayer/theoraplayer-videoclip.md).waitForCache_
+##### Method waitForCache:[Float](../../modules/wonkey/wonkey-types-float.md)( desiredCacheFactor:[Float](../../modules/wonkey/wonkey-types-float.md)=0.5,maxWaitTime:[Float](../../modules/wonkey/wonkey-types-float.md)=1.0 )

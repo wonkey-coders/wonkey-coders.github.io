@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpatialIndexSegmentQueryImpl_
+##### Alias cpSpatialIndexSegmentQueryImpl:Void([cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr,Void Ptr,[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),[cpVect](../../modules/chipmunk/chipmunk-cpvect.md),[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),[cpSpatialIndexSegmentQueryFunc](../../modules/chipmunk/chipmunk-cpspatialindexsegmentqueryfunc.md),Void Ptr)

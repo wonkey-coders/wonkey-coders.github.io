@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Canvas](../../modules/mojo/mojo-graphics-canvas.md).DrawTextSize_
+##### Method DrawTextSize:Void( text:[String](../../modules/wonkey/wonkey-types-string.md),tx:[Float](../../modules/wonkey/wonkey-types-float.md),ty:[Float](../../modules/wonkey/wonkey-types-float.md),xSize:[Float](../../modules/wonkey/wonkey-types-float.md)=1,ySize:[Float](../../modules/wonkey/wonkey-types-float.md)=1 )

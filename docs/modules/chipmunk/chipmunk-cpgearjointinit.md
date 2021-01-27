@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpGearJointInit_
+##### Function cpGearJointInit:[cpGearJoint](../../modules/chipmunk/chipmunk-cpgearjoint.md)( joint:[cpGearJoint](../../modules/chipmunk/chipmunk-cpgearjoint.md),a:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),b:[cpBody](../../modules/chipmunk/chipmunk-cpbody.md),phase:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md),ratio:[cpFloat](../../modules/chipmunk/chipmunk-cpfloat.md) )

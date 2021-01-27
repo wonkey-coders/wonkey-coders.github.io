@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glMultiDrawElements_
+##### Function glMultiDrawElements:Void( mode:[GLenum](../../modules/opengl/opengl-glenum.md),count:[GLsizei](../../modules/opengl/opengl-glsizei.md) Ptr,type:[GLenum](../../modules/opengl/opengl-glenum.md),indices:Void Ptr Ptr,drawcount:[GLsizei](../../modules/opengl/opengl-glsizei.md) )

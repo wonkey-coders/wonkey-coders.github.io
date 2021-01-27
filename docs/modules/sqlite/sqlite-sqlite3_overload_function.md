@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_overload\_function_
+##### Function sqlite3\_overload\_function:[Int](../../modules/wonkey/wonkey-types-int.md)( :[sqlite3](../../modules/sqlite/sqlite-sqlite3.md) Ptr,zFuncName:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md),nArg:[Int](../../modules/wonkey/wonkey-types-int.md) )

@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[ViewCell](../../modules/mojox/mojox-viewcell.md).Render_
+##### Method Render:Void( canvas:[mojo.graphics.Canvas](../../modules/mojo/mojo-graphics-canvas.md),rect:[std.geom.Recti](../../modules/std/std-geom-recti.md),style:[mojo.app.Style](../../modules/mojo/mojo-app-style.md),textGravity:[std.geom.Vec2f](../../modules/std/std-geom-vec2f.md) )

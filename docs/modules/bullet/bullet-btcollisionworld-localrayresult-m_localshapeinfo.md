@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btCollisionWorld](../../modules/bullet/bullet-btcollisionworld.md).[LocalRayResult](../../modules/bullet/bullet-btcollisionworld-localrayresult.md).m\_localShapeInfo_
+##### Field m\_localShapeInfo:[btCollisionWorld](../../modules/bullet/bullet-btcollisionworld.md).[LocalShapeInfo](../../modules/bullet/bullet-btcollisionworld-localshapeinfo.md) Ptr

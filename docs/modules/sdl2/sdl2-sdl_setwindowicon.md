@@ -1,0 +1,2 @@
+_[sdl2](../../modules/sdl2/sdl2-module.md):[sdl2](../../modules/sdl2/sdl2-module.md).SDL\_SetWindowIcon_
+##### Function SDL\_SetWindowIcon:Void( window_:[SDL_Window](../../modules/sdl2/sdl2-sdl_window.md) Ptr,icon_:[SDL_Surface](../../modules/sdl2/sdl2-sdl_surface.md) Ptr )

@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btBvhTriangleMeshShape](../../modules/bullet/bullet-btbvhtrianglemeshshape.md).New_
+##### Method New:Void( meshInterface:[btStridingMeshInterface](../../modules/bullet/bullet-btstridingmeshinterface.md),useQuantizedAabbCompression:[Bool](../../modules/wonkey/wonkey-types-bool.md),buildBvh:[Bool](../../modules/wonkey/wonkey-types-bool.md)=true )

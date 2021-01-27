@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[GridView](../../modules/mojox/mojox-gridview.md).AddView_
+##### Method AddView:Void( view:[mojo.app.View](../../modules/mojo/mojo-app-view.md),x:[Int](../../modules/wonkey/wonkey-types-int.md),y:[Int](../../modules/wonkey/wonkey-types-int.md),width:[Int](../../modules/wonkey/wonkey-types-int.md)=1,height:[Int](../../modules/wonkey/wonkey-types-int.md)=1 )

@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpatialIndexQuery_
+##### Function cpSpatialIndexQuery:Void( index:[cpSpatialIndex](../../modules/chipmunk/chipmunk-cpspatialindex.md) Ptr,obj:Void Ptr,bb:[cpBB](../../modules/chipmunk/chipmunk-cpbb.md),func:[cpSpatialIndexQueryFunc](../../modules/chipmunk/chipmunk-cpspatialindexqueryfunc.md),data:Void Ptr )

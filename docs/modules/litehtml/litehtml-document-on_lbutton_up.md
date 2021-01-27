@@ -1,0 +1,2 @@
+_[litehtml](../../modules/litehtml/litehtml-module.md):[litehtml](../../modules/litehtml/litehtml-module.md).[document](../../modules/litehtml/litehtml-document.md).on\_lbutton\_up_
+##### Method on\_lbutton\_up:Void( x:[Int](../../modules/wonkey/wonkey-types-int.md),y:[Int](../../modules/wonkey/wonkey-types-int.md),client_x:[Int](../../modules/wonkey/wonkey-types-int.md),client_y:[Int](../../modules/wonkey/wonkey-types-int.md) )

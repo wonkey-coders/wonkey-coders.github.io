@@ -1,0 +1,2 @@
+_[assimp](../../modules/assimp/assimp-module.md):[assimp](../../modules/assimp/assimp-module.md).aiImportFileFromMemory_
+##### Function aiImportFileFromMemory:[aiScene](../../modules/assimp/assimp-aiscene.md)( pBuffer:[libc.char_t](../../modules/libc/libc-char_t.md) Ptr,pLength:[UInt](../../modules/wonkey/wonkey-types-uint.md),pFlags:[UInt](../../modules/wonkey/wonkey-types-uint.md),pHint:[wonkey.types.Cstring](../../modules/wonkey/wonkey-types-cstring.md) )

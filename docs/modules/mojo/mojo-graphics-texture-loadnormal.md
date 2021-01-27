@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[Texture](../../modules/mojo/mojo-graphics-texture.md).LoadNormal_
+##### Function LoadNormal:[Texture](../../modules/mojo/mojo-graphics-texture.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),textureFlags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md),specular:[String](../../modules/wonkey/wonkey-types-string.md),specularScale:[Float](../../modules/wonkey/wonkey-types-float.md)=1,flipNormalY:[Bool](../../modules/wonkey/wonkey-types-bool.md)=true )

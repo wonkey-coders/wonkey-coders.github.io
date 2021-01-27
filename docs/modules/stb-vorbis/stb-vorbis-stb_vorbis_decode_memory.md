@@ -1,0 +1,2 @@
+_[stb-vorbis](../../modules/stb-vorbis/stb-vorbis-module.md):[stb.vorbis](stb:stb-vorbis.md).stb\_vorbis\_decode\_memory_
+##### Function stb\_vorbis\_decode\_memory:[Int](../../modules/wonkey/wonkey-types-int.md)( mem:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) Ptr,len:[Int](../../modules/wonkey/wonkey-types-int.md),channels:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,sample_rate:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,output:[Short](../../modules/wonkey/wonkey-types-short.md) Ptr Ptr )

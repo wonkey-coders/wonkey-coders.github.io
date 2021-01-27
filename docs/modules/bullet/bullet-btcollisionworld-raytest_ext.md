@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btCollisionWorld](../../modules/bullet/bullet-btcollisionworld.md).rayTest_
+##### Method rayTest:Void( rayFromWorld:[btVector3](../../modules/bullet/bullet-btvector3.md),rayToWorld:[btVector3](../../modules/bullet/bullet-btvector3.md),resultCallback:[btCollisionWorld](../../modules/bullet/bullet-btcollisionworld.md).[RayResultCallback](../../modules/bullet/bullet-btcollisionworld-rayresultcallback.md) Ptr )

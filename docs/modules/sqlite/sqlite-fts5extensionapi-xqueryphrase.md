@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).[Fts5ExtensionApi](../../modules/sqlite/sqlite-fts5extensionapi.md).xQueryPhrase_
+##### Field xQueryPhrase:[Int](../../modules/wonkey/wonkey-types-int.md)([Fts5Context](../../modules/sqlite/sqlite-fts5context.md) Ptr,[Int](../../modules/wonkey/wonkey-types-int.md),Void Ptr,[Int](../../modules/wonkey/wonkey-types-int.md)([Fts5ExtensionApi](../../modules/sqlite/sqlite-fts5extensionapi.md) Ptr,[Fts5Context](../../modules/sqlite/sqlite-fts5context.md) Ptr,Void Ptr))

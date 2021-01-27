@@ -1,0 +1,2 @@
+_[chipmunk](../../modules/chipmunk/chipmunk-module.md):[chipmunk](../../modules/chipmunk/chipmunk-module.md).cpSpaceShapeQuery_
+##### Function cpSpaceShapeQuery:[cpBool](../../modules/chipmunk/chipmunk-cpbool.md)( space:[cpSpace](../../modules/chipmunk/chipmunk-cpspace.md),shape:[cpShape](../../modules/chipmunk/chipmunk-cpshape.md),func:[cpSpaceShapeQueryFunc](../../modules/chipmunk/chipmunk-cpspaceshapequeryfunc.md),data:Void Ptr )

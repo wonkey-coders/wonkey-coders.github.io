@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Model](../../modules/mojo3d/mojo3d-model_ext.md).CreateSphere_
+##### Function CreateSphere:[Model](../../modules/mojo3d/mojo3d-model.md)( radius:[Float](../../modules/wonkey/wonkey-types-float.md),hsegs:[Int](../../modules/wonkey/wonkey-types-int.md),vsegs:[Int](../../modules/wonkey/wonkey-types-int.md),material:[Material](../../modules/mojo3d/mojo3d-material.md),parent:[Entity](../../modules/mojo3d/mojo3d-entity.md)=Null )

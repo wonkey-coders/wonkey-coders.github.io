@@ -1,0 +1,2 @@
+_[mojo](../../modules/mojo/mojo-module.md):[mojo.graphics](../../modules/mojo/mojo-graphics.md).[ResourceManager](../../modules/mojo/mojo-graphics-resourcemanager_ext.md).OpenFont_
+##### Method OpenFont:[Font](../../modules/mojo/mojo-graphics-font.md)( path:[String](../../modules/wonkey/wonkey-types-string.md),height:[Float](../../modules/wonkey/wonkey-types-float.md),shader:[Shader](../../modules/mojo/mojo-graphics-shader.md)=Null,textureFlags:[TextureFlags](../../modules/mojo/mojo-graphics-textureflags.md)=TextureFlags.FilterMipmap )

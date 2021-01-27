@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glMap1d_
+##### Function glMap1d:Void( target:[GLenum](../../modules/opengl/opengl-glenum.md),u1:[GLdouble](../../modules/opengl/opengl-gldouble.md),u2:[GLdouble](../../modules/opengl/opengl-gldouble.md),stride:[GLint](../../modules/opengl/opengl-glint.md),order:[GLint](../../modules/opengl/opengl-glint.md),points:[GLdouble](../../modules/opengl/opengl-gldouble.md) Ptr )

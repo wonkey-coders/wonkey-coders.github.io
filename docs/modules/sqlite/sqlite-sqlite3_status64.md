@@ -1,0 +1,2 @@
+_[sqlite](../../modules/sqlite/sqlite-module.md):[sqlite](../../modules/sqlite/sqlite-module.md).sqlite3\_status64_
+##### Function sqlite3\_status64:[Int](../../modules/wonkey/wonkey-types-int.md)( op:[Int](../../modules/wonkey/wonkey-types-int.md),pCurrent:[sqlite3_int64](../../modules/sqlite/sqlite-sqlite3_int64.md) Ptr,pHighwater:[sqlite3_int64](../../modules/sqlite/sqlite-sqlite3_int64.md) Ptr,resetFlag:[Int](../../modules/wonkey/wonkey-types-int.md) )

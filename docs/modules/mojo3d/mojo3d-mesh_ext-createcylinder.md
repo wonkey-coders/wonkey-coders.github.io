@@ -1,0 +1,2 @@
+_[mojo3d](../../modules/mojo3d/mojo3d-module.md):[mojo3d](../../modules/mojo3d/mojo3d-module.md).[Mesh](../../modules/mojo3d/mojo3d-mesh_ext.md).CreateCylinder_
+##### Function CreateCylinder:[Mesh](../../modules/mojo3d/mojo3d-mesh.md)( radius:[Float](../../modules/wonkey/wonkey-types-float.md),length:[Float](../../modules/wonkey/wonkey-types-float.md),axis:[std.geom.Axis](../../modules/std/std-geom-axis.md),segs:[Int](../../modules/wonkey/wonkey-types-int.md) )

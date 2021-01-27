@@ -1,0 +1,2 @@
+_[bullet](../../modules/bullet/bullet-module.md):[bullet](../../modules/bullet/bullet-module.md).[btHingeConstraint](../../modules/bullet/bullet-bthingeconstraint.md).setLimit_
+##### Method setLimit:Void( low:[btScalar](../../modules/bullet/bullet-btscalar.md),high:[btScalar](../../modules/bullet/bullet-btscalar.md),_softness:[btScalar](../../modules/bullet/bullet-btscalar.md)=.9,_biasFactor:[btScalar](../../modules/bullet/bullet-btscalar.md)=.3,_relaxationFactor:[btScalar](../../modules/bullet/bullet-btscalar.md)=1.0 )

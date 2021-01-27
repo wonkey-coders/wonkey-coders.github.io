@@ -1,0 +1,2 @@
+_[mojo3d-vr](../../modules/mojo3d-vr/mojo3d-vr-module.md):[mojo3d.vr](../../modules/mojo3d/mojo3d-vr.md).Frustum_
+##### Function Frustum:[std.geom.Mat4f](../../modules/std/std-geom-mat4f.md)( left:[Float](../../modules/wonkey/wonkey-types-float.md),right:[Float](../../modules/wonkey/wonkey-types-float.md),bottom:[Float](../../modules/wonkey/wonkey-types-float.md),top:[Float](../../modules/wonkey/wonkey-types-float.md),near:[Float](../../modules/wonkey/wonkey-types-float.md),far:[Float](../../modules/wonkey/wonkey-types-float.md) )

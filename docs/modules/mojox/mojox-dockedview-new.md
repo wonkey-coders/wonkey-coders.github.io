@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[DockedView](../../modules/mojox/mojox-dockedview.md).New_
+##### Method New:Void( view:[mojo.app.View](../../modules/mojo/mojo-app-view.md),location:[String](../../modules/wonkey/wonkey-types-string.md),size:[String](../../modules/wonkey/wonkey-types-string.md),resizable:[Bool](../../modules/wonkey/wonkey-types-bool.md) )

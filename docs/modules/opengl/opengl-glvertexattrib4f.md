@@ -1,0 +1,2 @@
+_[opengl](../../modules/opengl/opengl-module.md):[opengl](../../modules/opengl/opengl-module.md).glVertexAttrib4f_
+##### Function glVertexAttrib4f:Void( index:[GLuint](../../modules/opengl/opengl-gluint.md),x:[GLfloat](../../modules/opengl/opengl-glfloat.md),y:[GLfloat](../../modules/opengl/opengl-glfloat.md),z:[GLfloat](../../modules/opengl/opengl-glfloat.md),w:[GLfloat](../../modules/opengl/opengl-glfloat.md) )

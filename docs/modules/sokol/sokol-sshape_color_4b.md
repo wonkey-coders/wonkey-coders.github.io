@@ -1,0 +1,2 @@
+_[sokol](../../modules/sokol/sokol-module.md):[sokol](../../modules/sokol/sokol-module.md).sshape\_color\_4b_
+##### Function sshape\_color\_4b:[UInt](../../modules/wonkey/wonkey-types-uint.md)( r:[UByte](../../modules/wonkey/wonkey-types-ubyte.md),g:[UByte](../../modules/wonkey/wonkey-types-ubyte.md),b:[UByte](../../modules/wonkey/wonkey-types-ubyte.md),a:[UByte](../../modules/wonkey/wonkey-types-ubyte.md) )

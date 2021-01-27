@@ -1,0 +1,2 @@
+_[stb-truetype](../../modules/stb-truetype/stb-truetype-module.md):[stb.truetype](stb:stb-truetype.md).stbtt\_GetFontVMetrics_
+##### Function stbtt\_GetFontVMetrics:Void( info:[stbtt_fontinfo](../../modules/stb-truetype/stb-truetype-stbtt_fontinfo.md) Ptr,ascent:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,descent:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr,lineGap:[Int](../../modules/wonkey/wonkey-types-int.md) Ptr )

@@ -1,0 +1,2 @@
+_[mojox](../../modules/mojox/mojox-module.md):[mojox](../../modules/mojox/mojox-module.md).[document\_container](../../modules/mojox/mojox-document_container.md).draw\_text_
+##### Method draw\_text:Void( hdc:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md),text:[String](../../modules/wonkey/wonkey-types-string.md),hfont:[wonkey.types.Object](../../modules/wonkey/wonkey-types-object.md),color:[litehtml.web_color](../../modules/litehtml/litehtml-web_color.md) Ptr,pos:[litehtml.position](../../modules/litehtml/litehtml-position.md) Ptr )

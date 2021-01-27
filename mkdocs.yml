@@ -103,9 +103,7 @@ nav:
                 - time:                    modules/std/std-time.md
                 - async:                   modules/std/std-async.md
                 - audio:                   modules/std/std-audio.md
-                - graphics:
-                    - modules/std/std-graphics.md
-                    - pixmaploader:        modules/std/std-graphics-pixmaploader.md
+                - graphics:                modules/std/std-graphics.md
                 - geom:                    modules/std/std-geom.md
                 - memory:                  modules/std/std-memory.md
                 - stream:                  modules/std/std-stream.md

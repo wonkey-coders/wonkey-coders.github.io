@@ -1,0 +1,5235 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+    
+    
+      
+        <title>Sokol - wonkey-coders</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.75751829.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#namespace_sokol" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="wonkey-coders" class="md-header-nav__button md-logo" aria-label="wonkey-coders">
+      
+  <img src="../../../images/w_round.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            wonkey-coders
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Sokol
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="wonkey-coders" class="md-nav__button md-logo" aria-label="wonkey-coders">
+      
+  <img src="../../../images/w_round.png" alt="logo">
+
+    </a>
+    wonkey-coders
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Demos
+        
+      </label>
+      <nav class="md-nav" aria-label="Demos" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Demos
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/" class="md-nav__link">
+        Wonkey Examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/" class="md-nav__link">
+        Community Examples
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Docs
+        
+      </label>
+      <nav class="md-nav" aria-label="Docs" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Docs
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+      
+      <label class="md-nav__link" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../../docs/guide/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          User Guide
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="User Guide" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../../docs/guide/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            User Guide
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/wake/" class="md-nav__link">
+        The 'wake' compiler
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2" >
+      
+      <label class="md-nav__link" for="nav-3-1-2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Target SDKs
+        
+      </label>
+      <nav class="md-nav" aria-label="Target SDKs" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-1-2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Target SDKs
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/android/" class="md-nav__link">
+        Android
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/emscripten/" class="md-nav__link">
+        Emscripten
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/ios/" class="md-nav__link">
+        iOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/mac/" class="md-nav__link">
+        macOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/raspberry/" class="md-nav__link">
+        Raspberry Pi
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/guide/sdks/windows/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+      
+      <label class="md-nav__link" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../../docs/lang/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Language Reference
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Language Reference" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../../docs/lang/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Language Reference
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/import/" class="md-nav__link">
+        Imports
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/comments/" class="md-nav__link">
+        Comments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/namespace/" class="md-nav__link">
+        Namespaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-5" type="checkbox" id="nav-3-2-5" >
+      
+      <label class="md-nav__link" for="nav-3-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        
+          Functions
+        
+      </label>
+      <nav class="md-nav" aria-label="Functions" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-5">
+          <span class="md-nav__icon md-icon"></span>
+          
+            Functions
+          
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/function/" class="md-nav__link">
+        Global functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/lambda/" class="md-nav__link">
+        Lambda functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/function-overloading/" class="md-nav__link">
+        Function overloading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/function-values/" class="md-nav__link">
+        Function values
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-6" type="checkbox" id="nav-3-2-6" >
+      
+      <label class="md-nav__link" for="nav-3-2-6">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../../docs/lang/expressions/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Expressions
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Expressions" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-6">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../../docs/lang/expressions/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Expressions
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/operators/" class="md-nav__link">
+        Operators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/cast/" class="md-nav__link">
+        Casting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/type-balancing/" class="md-nav__link">
+        Type balancing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/variables/" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/string/" class="md-nav__link">
+        Strings
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/variant/" class="md-nav__link">
+        Variants
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/alias/" class="md-nav__link">
+        Aliases
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/datatypes/" class="md-nav__link">
+        Basic types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-12" type="checkbox" id="nav-3-2-12" >
+      
+      <label class="md-nav__link" for="nav-3-2-12">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../../docs/lang/compound-types/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Compound types
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Compound types" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-12">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../../docs/lang/compound-types/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Compound types
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/array/" class="md-nav__link">
+        Arrays
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/enum/" class="md-nav__link">
+        Enums
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/pointer/" class="md-nav__link">
+        Pointers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/class/" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/struct/" class="md-nav__link">
+        Structs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/interface/" class="md-nav__link">
+        Interfaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/field/" class="md-nav__link">
+        Fields
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/method/" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/class-function/" class="md-nav__link">
+        Class/Struct Functions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/property/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/conversion-operators/" class="md-nav__link">
+        Conversion Operators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/operator-overloading/" class="md-nav__link">
+        Operator overloading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/extends/" class="md-nav__link">
+        Inheritance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/extension/" class="md-nav__link">
+        Extensions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/encapsulation/" class="md-nav__link">
+        Encapsulation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-13" type="checkbox" id="nav-3-2-13" >
+      
+      <label class="md-nav__link" for="nav-3-2-13">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../../docs/lang/generics/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Generics
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Generics" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-2-13">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../../docs/lang/generics/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Generics
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/generic-function/" class="md-nav__link">
+        Generic Function
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/generic-class/" class="md-nav__link">
+        Generic Class
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/generic-struct/" class="md-nav__link">
+        Generic Struct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/generic-interface/" class="md-nav__link">
+        Generic Interface
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/conditional-statements/" class="md-nav__link">
+        Conditional statements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/loop-statements/" class="md-nav__link">
+        Loop statements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/preprocessor/" class="md-nav__link">
+        The Preprocessor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/error-handling/" class="md-nav__link">
+        Error handling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/weak-references/" class="md-nav__link">
+        Weak references
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/reflection/" class="md-nav__link">
+        Reflection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/native-code/" class="md-nav__link">
+        Native code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/lang/misc/" class="md-nav__link">
+        Misc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+      
+      <label class="md-nav__link" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Modules Reference
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="Modules Reference" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Modules Reference
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-1" type="checkbox" id="nav-3-3-1" >
+      
+      <label class="md-nav__link" for="nav-3-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../wonkey/wonkey-module/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          wonkey
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="wonkey" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-3-1">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../wonkey/wonkey-module/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            wonkey
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wonkey/wonkey-debug/" class="md-nav__link">
+        debug
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wonkey/wonkey-gc/" class="md-nav__link">
+        gc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wonkey/wonkey-math/" class="md-nav__link">
+        math
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wonkey/wonkey-types/" class="md-nav__link">
+        types
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-2" type="checkbox" id="nav-3-3-2" >
+      
+      <label class="md-nav__link" for="nav-3-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../std/std-module/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          std
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="std" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-3-2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../std/std-module/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            std
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-permissions/" class="md-nav__link">
+        permissions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-requesters/" class="md-nav__link">
+        requesters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-socket/" class="md-nav__link">
+        socket
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-digest/" class="md-nav__link">
+        digest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-base64/" class="md-nav__link">
+        base64
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-zipfile/" class="md-nav__link">
+        zipfile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-jsonify/" class="md-nav__link">
+        jsonify
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-json/" class="md-nav__link">
+        json
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-stringio/" class="md-nav__link">
+        stringio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-random/" class="md-nav__link">
+        random
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-filesystem/" class="md-nav__link">
+        filesystem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-process/" class="md-nav__link">
+        process
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-fiber/" class="md-nav__link">
+        fiber
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-timer/" class="md-nav__link">
+        timer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-time/" class="md-nav__link">
+        time
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-async/" class="md-nav__link">
+        async
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-audio/" class="md-nav__link">
+        audio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-graphics/" class="md-nav__link">
+        graphics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-geom/" class="md-nav__link">
+        geom
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-memory/" class="md-nav__link">
+        memory
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-stream/" class="md-nav__link">
+        stream
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-resource/" class="md-nav__link">
+        resource
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../std/std-collections/" class="md-nav__link">
+        collections
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libc/libc-module/" class="md-nav__link">
+        libc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thread/thread-module/" class="md-nav__link">
+        thread
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflection/reflection-module/" class="md-nav__link">
+        reflection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-6" type="checkbox" id="nav-3-3-6" >
+      
+      <label class="md-nav__link" for="nav-3-3-6">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../mojo/mojo-module/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          mojo
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="mojo" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-3-6">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../mojo/mojo-module/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            mojo
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo/mojo-audio/" class="md-nav__link">
+        audio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo/mojo-input/" class="md-nav__link">
+        input
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-6-3" type="checkbox" id="nav-3-3-6-3" >
+      
+      <label class="md-nav__link" for="nav-3-3-6-3">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../mojo/mojo-graphics/" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          graphics
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="graphics" data-md-level="4">
+        <label class="md-nav__title" for="nav-3-3-6-3">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../../mojo/mojo-graphics/" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            graphics
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo/mojo-graphics-glutil/" class="md-nav__link">
+        glutil
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo/mojo-app/" class="md-nav__link">
+        app
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo3d/mojo3d-module/" class="md-nav__link">
+        mojo3d
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo3d-loaders/mojo3d-loaders-module/" class="md-nav__link">
+        mojo3d-loaders
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojo3d-vr/mojo3d-vr-module/" class="md-nav__link">
+        mojo3d-vr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mojox/mojox-module/" class="md-nav__link">
+        mojox
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admob/admob-module/" class="md-nav__link">
+        admob
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../android/android-module/" class="md-nav__link">
+        android
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assimp/assimp-module/" class="md-nav__link">
+        assimp
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bullet/bullet-module/" class="md-nav__link">
+        bullet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chipmunk/chipmunk-module/" class="md-nav__link">
+        chipmunk
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emscripten/emscripten-module/" class="md-nav__link">
+        emscripten
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../freetype/freetype-module/" class="md-nav__link">
+        freetype
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gles20/gles20-module/" class="md-nav__link">
+        gles20
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hoedown/hoedown-module/" class="md-nav__link">
+        hoedown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../httprequest/httprequest-module/" class="md-nav__link">
+        httprequest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iap/iap-module/" class="md-nav__link">
+        iap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jni/jni-module/" class="md-nav__link">
+        jni
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../litehtml/litehtml-module/" class="md-nav__link">
+        litehtml
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miniz/miniz-module/" class="md-nav__link">
+        miniz
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../openal/openal-module/" class="md-nav__link">
+        openal
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../opengl/opengl-module/" class="md-nav__link">
+        opengl
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdl2/sdl2-module/" class="md-nav__link">
+        sdl2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdl2-mixer/sdl2-mixer-module/" class="md-nav__link">
+        sdl2-mixer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sokol-module/" class="md-nav__link">
+        sokol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sqlite/sqlite-module/" class="md-nav__link">
+        sqlite
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stb-image/stb-image-module/" class="md-nav__link">
+        stb-image
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stb-image-write/stb-image-write-module/" class="md-nav__link">
+        stb-image-write
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stb-truetype/stb-truetype-module/" class="md-nav__link">
+        stb-truetype
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stb-vorbis/stb-vorbis-module/" class="md-nav__link">
+        stb-vorbis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theoraplayer/theoraplayer-module/" class="md-nav__link">
+        theoraplayer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tinyregex/tinyregex-module/" class="md-nav__link">
+        tinyregex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tinyxml2/tinyxml2-module/" class="md-nav__link">
+        tinyxml2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../win32/win32-module/" class="md-nav__link">
+        win32
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zlib/zlib-module/" class="md-nav__link">
+        zlib
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#namespace_sokol" class="md-nav__link">
+    Namespace sokol
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Sokol</h1>
+                
+                <p><em><a href="../sokol-module/">sokol</a>:sokol</em></p>
+<h5 id="namespace_sokol">Namespace sokol<a class="headerlink" href="#namespace_sokol" title="Permanent link">#</a></h5>
+<table>
+<thead>
+<tr>
+<th align="left">Aliases</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../sokol-sfetch_callback_t/">sfetch_callback_t</a></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Enums</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../sokol-sapp_event_type/">sapp_event_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_error/">sapp_html5_fetch_error</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode/">sapp_keycode</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mousebutton/">sapp_mousebutton</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_t/">sfetch_error_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_action/">sg_action</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend/">sg_backend</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blend_factor/">sg_blend_factor</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blend_op/">sg_blend_op</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_border_color/">sg_border_color</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffer_type/">sg_buffer_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_color_mask/">sg_color_mask</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_compare_func/">sg_compare_func</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cube_face/">sg_cube_face</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cull_mode/">sg_cull_mode</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_face_winding/">sg_face_winding</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter/">sg_filter</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_image_type/">sg_image_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_index_type/">sg_index_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixel_format/">sg_pixel_format</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_primitive_type/">sg_primitive_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_resource_state/">sg_resource_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_sampler_type/">sg_sampler_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_stage/">sg_shader_stage</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencil_op/">sg_stencil_op</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniform_type/">sg_uniform_type</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_usage/">sg_usage</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertex_format/">sg_vertex_format</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertex_step/">sg_vertex_step</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_wrap/">sg_wrap</a></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Structs</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../sokol-sapp_desc/">sapp_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_event/">sapp_event</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_request/">sapp_html5_fetch_request</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_response/">sapp_html5_fetch_response</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_touchpoint/">sapp_touchpoint</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_desc/">sargs_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_desc/">saudio_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_desc_t/">sfetch_desc_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_handle_t/">sfetch_handle_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_request_t/">sfetch_request_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_response_t/">sfetch_response_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_attachment_desc/">sg_attachment_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_bindings/">sg_bindings</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blend_state/">sg_blend_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffer/">sg_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffer_desc/">sg_buffer_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffer_info/">sg_buffer_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffer_layout_desc/">sg_buffer_layout_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_color_attachment_action/">sg_color_attachment_action</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_context/">sg_context</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_context_desc/">sg_context_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_d3d11_context_desc/">sg_d3d11_context_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_depth_attachment_action/">sg_depth_attachment_action</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_depth_stencil_state/">sg_depth_stencil_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_desc/">sg_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_features/">sg_features</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_gl_context_desc/">sg_gl_context_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_image/">sg_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_image_content/">sg_image_content</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_image_desc/">sg_image_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_image_info/">sg_image_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_layout_desc/">sg_layout_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_limits/">sg_limits</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_metal_context_desc/">sg_metal_context_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pass/">sg_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pass_action/">sg_pass_action</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pass_desc/">sg_pass_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pass_info/">sg_pass_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pipeline/">sg_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pipeline_desc/">sg_pipeline_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pipeline_info/">sg_pipeline_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_info/">sg_pixelformat_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_rasterizer_state/">sg_rasterizer_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader/">sg_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_attr_desc/">sg_shader_attr_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_desc/">sg_shader_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_image_desc/">sg_shader_image_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_info/">sg_shader_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_stage_desc/">sg_shader_stage_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_uniform_block_desc/">sg_shader_uniform_block_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shader_uniform_desc/">sg_shader_uniform_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_slot_info/">sg_slot_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencil_attachment_action/">sg_stencil_attachment_action</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencil_state/">sg_stencil_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_subimage_content/">sg_subimage_content</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_trace_hooks/">sg_trace_hooks</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertex_attr_desc/">sg_vertex_attr_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_wgpu_context_desc/">sg_wgpu_context_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_box_t/">sshape_box_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_buffer_item_t/">sshape_buffer_item_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_buffer_t/">sshape_buffer_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_cylinder_t/">sshape_cylinder_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_element_range_t/">sshape_element_range_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_mat4_t/">sshape_mat4_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_plane_t/">sshape_plane_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_sizes_item_t/">sshape_sizes_item_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_sizes_t/">sshape_sizes_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_sphere_t/">sshape_sphere_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_torus_t/">sshape_torus_t</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_vertex_t/">sshape_vertex_t</a></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Functions</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../sokol-sapp_android_get_native_activity/">sapp_android_get_native_activity</a></td>
+<td align="left">Android: get native activity handle</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_cancel_quit/">sapp_cancel_quit</a></td>
+<td align="left">cancel a pending quit (when SAPP_EVENTTYPE_QUIT_REQUESTED has been received)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_color_format/">sapp_color_format</a></td>
+<td align="left">get default framebuffer color pixel format</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_consume_event/">sapp_consume_event</a></td>
+<td align="left">call from inside event callback to consume the current event (don't forward to platform)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_d3d11_get_depth_stencil_view/">sapp_d3d11_get_depth_stencil_view</a></td>
+<td align="left">D3D11: get pointer to ID3D11DepthStencilView</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_d3d11_get_device/">sapp_d3d11_get_device</a></td>
+<td align="left">D3D11: get pointer to ID3D11Device object</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_d3d11_get_device_context/">sapp_d3d11_get_device_context</a></td>
+<td align="left">D3D11: get pointer to ID3D11DeviceContext object</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_d3d11_get_render_target_view/">sapp_d3d11_get_render_target_view</a></td>
+<td align="left">D3D11: get pointer to ID3D11RenderTargetView object</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_depth_format/">sapp_depth_format</a></td>
+<td align="left">get default framebuffer depth pixel format</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_dpi_scale/">sapp_dpi_scale</a></td>
+<td align="left">Returns the dpi scaling factor (window pixels to framebuffer pixels)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_frame_count/">sapp_frame_count</a></td>
+<td align="left">get the current frame counter (for comparison with sapp_event.frame_count)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_get_clipboard_string/">sapp_get_clipboard_string</a></td>
+<td align="left">read string from clipboard (usually during SAPP_EVENTTYPE_CLIPBOARD_PASTED)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_get_dropped_file_path/">sapp_get_dropped_file_path</a></td>
+<td align="left">gets the dropped file paths</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_get_num_dropped_files/">sapp_get_num_dropped_files</a></td>
+<td align="left">gets the total number of dropped files (after an SAPP_EVENTTYPE_FILES_DROPPED event)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_gles2/">sapp_gles2</a></td>
+<td align="left">GL: return true when GLES2 fallback is active (to detect fallback from GLES3)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_height/">sapp_height</a></td>
+<td align="left">returns the current framebuffer height in pixels</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_high_dpi/">sapp_high_dpi</a></td>
+<td align="left">Returns true when high_dpi was requested and actually running in a high-dpi scenario</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_ask_leave_site/">sapp_html5_ask_leave_site</a></td>
+<td align="left">HTML5: enable or disable the hardwired "Leave Site?" dialog box</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_dropped_file/">sapp_html5_fetch_dropped_file</a></td>
+<td align="left">HTML5: asynchronously load the content of a dropped file</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_get_dropped_file_size/">sapp_html5_get_dropped_file_size</a></td>
+<td align="left">HTML5: get byte size of a dropped file</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_ios_get_window/">sapp_ios_get_window</a></td>
+<td align="left">iOS: get bridged pointer to iOS UIWindow</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_is_fullscreen/">sapp_is_fullscreen</a></td>
+<td align="left">query fullscreen mode</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_isvalid/">sapp_isvalid</a></td>
+<td align="left">Returns true after sokol-app has been initialized</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keyboard_shown/">sapp_keyboard_shown</a></td>
+<td align="left">return true if the mobile device onscreen keyboard is currently shown</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_lock_mouse/">sapp_lock_mouse</a></td>
+<td align="left">enable/disable mouse-pointer-lock mode</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_macos_get_window/">sapp_macos_get_window</a></td>
+<td align="left">macOS: get bridged pointer to macOS NSWindow</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_metal_get_device/">sapp_metal_get_device</a></td>
+<td align="left">Metal: get bridged pointer to Metal device object</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_metal_get_drawable/">sapp_metal_get_drawable</a></td>
+<td align="left">Metal: get bridged pointer to current drawable</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_metal_get_renderpass_descriptor/">sapp_metal_get_renderpass_descriptor</a></td>
+<td align="left">Metal: get bridged pointer to this frame's renderpass descriptor</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mouse_locked/">sapp_mouse_locked</a></td>
+<td align="left">return true if in mouse-pointer-lock mode (this may toggle a few frames later)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mouse_shown/">sapp_mouse_shown</a></td>
+<td align="left">show or hide the mouse cursor</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_query_desc/">sapp_query_desc</a></td>
+<td align="left">return a copy of the sapp_desc structure</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_quit/">sapp_quit</a></td>
+<td align="left">intiate a "hard quit" (quit application without sending SAPP_EVENTTYPE_QUIT_REQUSTED)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_request_quit/">sapp_request_quit</a></td>
+<td align="left">initiate a "soft quit" (sends SAPP_EVENTTYPE_QUIT_REQUESTED)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_run/">sapp_run</a></td>
+<td align="left">special run-function for SOKOL_NO_ENTRY (in standard mode this is an empty stub)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_sample_count/">sapp_sample_count</a></td>
+<td align="left">get default framebuffer sample count</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_set_clipboard_string/">sapp_set_clipboard_string</a></td>
+<td align="left">write string into clipboard</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_set_window_title/">sapp_set_window_title</a></td>
+<td align="left">set the window title (only on desktop platforms)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_sgcontext/">sapp_sgcontext</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_show_keyboard/">sapp_show_keyboard</a></td>
+<td align="left">show or hide the mobile device onscreen keyboard</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_show_mouse/">sapp_show_mouse</a></td>
+<td align="left">show or hide the mouse cursor</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_toggle_fullscreen/">sapp_toggle_fullscreen</a></td>
+<td align="left">toggle fullscreen mode</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_userdata/">sapp_userdata</a></td>
+<td align="left">return the userdata pointer optionally provided in sapp_desc</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_wgpu_get_depth_stencil_view/">sapp_wgpu_get_depth_stencil_view</a></td>
+<td align="left">WebGPU: get swapchain's WGPUTextureView for the depth-stencil surface</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_wgpu_get_device/">sapp_wgpu_get_device</a></td>
+<td align="left">WebGPU: get WGPUDevice handle</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_wgpu_get_render_view/">sapp_wgpu_get_render_view</a></td>
+<td align="left">WebGPU: get swapchain's WGPUTextureView handle for rendering</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_wgpu_get_resolve_view/">sapp_wgpu_get_resolve_view</a></td>
+<td align="left">WebGPU: get swapchain's MSAA-resolve WGPUTextureView (may return null)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_width/">sapp_width</a></td>
+<td align="left">Returns the current framebuffer width in pixels</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_win32_get_hwnd/">sapp_win32_get_hwnd</a></td>
+<td align="left">Win32: get the HWND window handle</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_boolean/">sargs_boolean</a></td>
+<td align="left">return true if key's value is "true", "yes" or "on"</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_equals/">sargs_equals</a></td>
+<td align="left">return true if val arg matches the value associated with key</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_exists/">sargs_exists</a></td>
+<td align="left">test if an argument exists by key name</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_find/">sargs_find</a></td>
+<td align="left">get index of arg by key name, return -1 if not exists</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_isvalid/">sargs_isvalid</a></td>
+<td align="left">true between sargs_setup() and sargs_shutdown()</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_key_at/">sargs_key_at</a></td>
+<td align="left">get key name of argument at index, or empty string</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_num_args/">sargs_num_args</a></td>
+<td align="left">get number of parsed arguments</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_setup/">sargs_setup</a></td>
+<td align="left">setup sokol-args</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_shutdown/">sargs_shutdown</a></td>
+<td align="left">shutdown sokol-args</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_value/">sargs_value</a></td>
+<td align="left">get value by key name, return empty string if key doesn't exist</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_value_at/">sargs_value_at</a></td>
+<td align="left">get value string of argument at index, or empty string</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sargs_value_def/">sargs_value_def</a></td>
+<td align="left">get value by key name, return provided default if key doesn't exist</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_buffer_frames/">saudio_buffer_frames</a></td>
+<td align="left">return actual backend buffer size in number of frames</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_channels/">saudio_channels</a></td>
+<td align="left">actual number of channels</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_expect/">saudio_expect</a></td>
+<td align="left">get current number of frames to fill packet queue</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_isvalid/">saudio_isvalid</a></td>
+<td align="left">true after setup if audio backend was successfully initialized</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_push/">saudio_push</a></td>
+<td align="left">push sample frames from main thread, returns number of frames actually pushed</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_query_desc/">saudio_query_desc</a></td>
+<td align="left">return a copy of the original saudio_desc struct</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_sample_rate/">saudio_sample_rate</a></td>
+<td align="left">actual sample rate</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_setup/">saudio_setup</a></td>
+<td align="left">setup sokol-audio</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_shutdown/">saudio_shutdown</a></td>
+<td align="left">shutdown sokol-audio</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-saudio_userdata/">saudio_userdata</a></td>
+<td align="left">return the saudio_desc.user_data pointer</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_bind_buffer/">sfetch_bind_buffer</a></td>
+<td align="left">bind a data buffer to a request (request must not currently have a buffer bound, must be called from response callback</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_cancel/">sfetch_cancel</a></td>
+<td align="left">cancel a request that's in flight (will call response callback with .cancelled + .finished)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_continue/">sfetch_continue</a></td>
+<td align="left">continue a paused request</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_desc/">sfetch_desc</a></td>
+<td align="left">get the desc struct that was passed to sfetch_setup()</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_dowork/">sfetch_dowork</a></td>
+<td align="left">do per-frame work, moves requests into and out of IO threads, and invokes response-callbacks</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_handle_valid/">sfetch_handle_valid</a></td>
+<td align="left">return true if a handle is valid <em>and</em> the request is alive</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_max_path/">sfetch_max_path</a></td>
+<td align="left">return the value of the SFETCH_MAX_PATH implementation config value</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_max_userdata_bytes/">sfetch_max_userdata_bytes</a></td>
+<td align="left">return the max userdata size in number of bytes (SFETCH_MAX_USERDATA_UINT64 * sizeof(uint64_t))</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_pause/">sfetch_pause</a></td>
+<td align="left">pause a request (will call response callback each frame with .paused)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_send/">sfetch_send</a></td>
+<td align="left">send a fetch-request, get handle to request back</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_setup/">sfetch_setup</a></td>
+<td align="left">setup sokol-fetch (can be called on multiple threads)</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_shutdown/">sfetch_shutdown</a></td>
+<td align="left">discard a sokol-fetch context</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_unbind_buffer/">sfetch_unbind_buffer</a></td>
+<td align="left">clear the 'buffer binding' of a request, returns previous buffer pointer (can be 0), must be called from response callback</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_valid/">sfetch_valid</a></td>
+<td align="left">return true if sokol-fetch has been setup</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_activate_context/">sg_activate_context</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_alloc_buffer/">sg_alloc_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_alloc_image/">sg_alloc_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_alloc_pass/">sg_alloc_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_alloc_pipeline/">sg_alloc_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_alloc_shader/">sg_alloc_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_append_buffer/">sg_append_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_apply_bindings/">sg_apply_bindings</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_apply_pipeline/">sg_apply_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_apply_scissor_rect/">sg_apply_scissor_rect</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_apply_uniforms/">sg_apply_uniforms</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_apply_viewport/">sg_apply_viewport</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_begin_default_pass/">sg_begin_default_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_begin_pass/">sg_begin_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_commit/">sg_commit</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_d3d11_device/">sg_d3d11_device</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_dealloc_buffer/">sg_dealloc_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_dealloc_image/">sg_dealloc_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_dealloc_pass/">sg_dealloc_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_dealloc_pipeline/">sg_dealloc_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_dealloc_shader/">sg_dealloc_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_destroy_buffer/">sg_destroy_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_destroy_image/">sg_destroy_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_destroy_pass/">sg_destroy_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_destroy_pipeline/">sg_destroy_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_destroy_shader/">sg_destroy_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_discard_context/">sg_discard_context</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_draw/">sg_draw</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_end_pass/">sg_end_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_fail_buffer/">sg_fail_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_fail_image/">sg_fail_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_fail_pass/">sg_fail_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_fail_pipeline/">sg_fail_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_fail_shader/">sg_fail_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_init_buffer/">sg_init_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_init_image/">sg_init_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_init_pass/">sg_init_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_init_pipeline/">sg_init_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_init_shader/">sg_init_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_install_trace_hooks/">sg_install_trace_hooks</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_isvalid/">sg_isvalid</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_make_buffer/">sg_make_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_make_image/">sg_make_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_make_pass/">sg_make_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_make_pipeline/">sg_make_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_make_shader/">sg_make_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_mtl_device/">sg_mtl_device</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_mtl_render_command_encoder/">sg_mtl_render_command_encoder</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pop_debug_group/">sg_pop_debug_group</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_push_debug_group/">sg_push_debug_group</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_backend/">sg_query_backend</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_buffer_defaults/">sg_query_buffer_defaults</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_buffer_info/">sg_query_buffer_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_buffer_overflow/">sg_query_buffer_overflow</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_buffer_state/">sg_query_buffer_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_desc/">sg_query_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_features/">sg_query_features</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_image_defaults/">sg_query_image_defaults</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_image_info/">sg_query_image_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_image_state/">sg_query_image_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_limits/">sg_query_limits</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pass_defaults/">sg_query_pass_defaults</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pass_info/">sg_query_pass_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pass_state/">sg_query_pass_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pipeline_defaults/">sg_query_pipeline_defaults</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pipeline_info/">sg_query_pipeline_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pipeline_state/">sg_query_pipeline_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_pixelformat/">sg_query_pixelformat</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_shader_defaults/">sg_query_shader_defaults</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_shader_info/">sg_query_shader_info</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_query_shader_state/">sg_query_shader_state</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_reset_state_cache/">sg_reset_state_cache</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_setup/">sg_setup</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_setup_context/">sg_setup_context</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shutdown/">sg_shutdown</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uninit_buffer/">sg_uninit_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uninit_image/">sg_uninit_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uninit_pass/">sg_uninit_pass</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uninit_pipeline/">sg_uninit_pipeline</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uninit_shader/">sg_uninit_shader</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_update_buffer/">sg_update_buffer</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_update_image/">sg_update_image</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sokol_main/">sokol_main</a></td>
+<td align="left">User-provided functions</td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_box_sizes/">sshape_box_sizes</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_buffer_layout_desc/">sshape_buffer_layout_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_build_box/">sshape_build_box</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_build_cylinder/">sshape_build_cylinder</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_build_plane/">sshape_build_plane</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_build_sphere/">sshape_build_sphere</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_build_torus/">sshape_build_torus</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_color_3b/">sshape_color_3b</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_color_3f/">sshape_color_3f</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_color_4b/">sshape_color_4b</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_color_4f/">sshape_color_4f</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_color_attr_desc/">sshape_color_attr_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_cylinder_sizes/">sshape_cylinder_sizes</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_element_range/">sshape_element_range</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_index_buffer_desc/">sshape_index_buffer_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_mat4/">sshape_mat4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_mat4_transpose/">sshape_mat4_transpose</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_normal_attr_desc/">sshape_normal_attr_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_plane_sizes/">sshape_plane_sizes</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_position_attr_desc/">sshape_position_attr_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_sphere_sizes/">sshape_sphere_sizes</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_texcoord_attr_desc/">sshape_texcoord_attr_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_torus_sizes/">sshape_torus_sizes</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sshape_vertex_buffer_desc/">sshape_vertex_buffer_desc</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_diff/">stm_diff</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_laptime/">stm_laptime</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_ms/">stm_ms</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_now/">stm_now</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_ns/">stm_ns</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_round_to_common_refresh_rate/">stm_round_to_common_refresh_rate</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_sec/">stm_sec</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_setup/">stm_setup</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_since/">stm_since</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-stm_us/">stm_us</a></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Consts</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_char/">SAPP_EVENTTYPE_CHAR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_clipboard_pasted/">SAPP_EVENTTYPE_CLIPBOARD_PASTED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_files_dropped/">SAPP_EVENTTYPE_FILES_DROPPED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_iconified/">SAPP_EVENTTYPE_ICONIFIED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_invalid/">SAPP_EVENTTYPE_INVALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_key_down/">SAPP_EVENTTYPE_KEY_DOWN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_key_up/">SAPP_EVENTTYPE_KEY_UP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_mouse_down/">SAPP_EVENTTYPE_MOUSE_DOWN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_mouse_enter/">SAPP_EVENTTYPE_MOUSE_ENTER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_mouse_leave/">SAPP_EVENTTYPE_MOUSE_LEAVE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_mouse_move/">SAPP_EVENTTYPE_MOUSE_MOVE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_mouse_scroll/">SAPP_EVENTTYPE_MOUSE_SCROLL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_mouse_up/">SAPP_EVENTTYPE_MOUSE_UP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_quit_requested/">SAPP_EVENTTYPE_QUIT_REQUESTED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_resized/">SAPP_EVENTTYPE_RESIZED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_restored/">SAPP_EVENTTYPE_RESTORED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_resumed/">SAPP_EVENTTYPE_RESUMED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_suspended/">SAPP_EVENTTYPE_SUSPENDED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_touches_began/">SAPP_EVENTTYPE_TOUCHES_BEGAN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_touches_cancelled/">SAPP_EVENTTYPE_TOUCHES_CANCELLED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_touches_ended/">SAPP_EVENTTYPE_TOUCHES_ENDED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_touches_moved/">SAPP_EVENTTYPE_TOUCHES_MOVED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_eventtype_update_cursor/">SAPP_EVENTTYPE_UPDATE_CURSOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_error_buffer_too_small/">SAPP_HTML5_FETCH_ERROR_BUFFER_TOO_SMALL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_error_no_error/">SAPP_HTML5_FETCH_ERROR_NO_ERROR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_html5_fetch_error_other/">SAPP_HTML5_FETCH_ERROR_OTHER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_0/">SAPP_KEYCODE_0</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_1/">SAPP_KEYCODE_1</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_2/">SAPP_KEYCODE_2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_3/">SAPP_KEYCODE_3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_4/">SAPP_KEYCODE_4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_5/">SAPP_KEYCODE_5</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_6/">SAPP_KEYCODE_6</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_7/">SAPP_KEYCODE_7</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_8/">SAPP_KEYCODE_8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_9/">SAPP_KEYCODE_9</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_a/">SAPP_KEYCODE_A</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_apostrophe/">SAPP_KEYCODE_APOSTROPHE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_b/">SAPP_KEYCODE_B</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_backslash/">SAPP_KEYCODE_BACKSLASH</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_backspace/">SAPP_KEYCODE_BACKSPACE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_c/">SAPP_KEYCODE_C</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_caps_lock/">SAPP_KEYCODE_CAPS_LOCK</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_comma/">SAPP_KEYCODE_COMMA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_d/">SAPP_KEYCODE_D</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_delete/">SAPP_KEYCODE_DELETE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_down/">SAPP_KEYCODE_DOWN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_e/">SAPP_KEYCODE_E</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_end/">SAPP_KEYCODE_END</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_enter/">SAPP_KEYCODE_ENTER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_equal/">SAPP_KEYCODE_EQUAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_escape/">SAPP_KEYCODE_ESCAPE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f/">SAPP_KEYCODE_F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f1/">SAPP_KEYCODE_F1</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f10/">SAPP_KEYCODE_F10</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f11/">SAPP_KEYCODE_F11</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f12/">SAPP_KEYCODE_F12</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f13/">SAPP_KEYCODE_F13</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f14/">SAPP_KEYCODE_F14</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f15/">SAPP_KEYCODE_F15</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f16/">SAPP_KEYCODE_F16</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f17/">SAPP_KEYCODE_F17</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f18/">SAPP_KEYCODE_F18</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f19/">SAPP_KEYCODE_F19</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f2/">SAPP_KEYCODE_F2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f20/">SAPP_KEYCODE_F20</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f21/">SAPP_KEYCODE_F21</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f22/">SAPP_KEYCODE_F22</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f23/">SAPP_KEYCODE_F23</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f24/">SAPP_KEYCODE_F24</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f25/">SAPP_KEYCODE_F25</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f3/">SAPP_KEYCODE_F3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f4/">SAPP_KEYCODE_F4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f5/">SAPP_KEYCODE_F5</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f6/">SAPP_KEYCODE_F6</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f7/">SAPP_KEYCODE_F7</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f8/">SAPP_KEYCODE_F8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_f9/">SAPP_KEYCODE_F9</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_g/">SAPP_KEYCODE_G</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_grave_accent/">SAPP_KEYCODE_GRAVE_ACCENT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_h/">SAPP_KEYCODE_H</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_home/">SAPP_KEYCODE_HOME</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_i/">SAPP_KEYCODE_I</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_insert/">SAPP_KEYCODE_INSERT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_invalid/">SAPP_KEYCODE_INVALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_j/">SAPP_KEYCODE_J</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_k/">SAPP_KEYCODE_K</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_0/">SAPP_KEYCODE_KP_0</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_1/">SAPP_KEYCODE_KP_1</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_2/">SAPP_KEYCODE_KP_2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_3/">SAPP_KEYCODE_KP_3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_4/">SAPP_KEYCODE_KP_4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_5/">SAPP_KEYCODE_KP_5</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_6/">SAPP_KEYCODE_KP_6</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_7/">SAPP_KEYCODE_KP_7</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_8/">SAPP_KEYCODE_KP_8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_9/">SAPP_KEYCODE_KP_9</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_add/">SAPP_KEYCODE_KP_ADD</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_decimal/">SAPP_KEYCODE_KP_DECIMAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_divide/">SAPP_KEYCODE_KP_DIVIDE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_enter/">SAPP_KEYCODE_KP_ENTER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_equal/">SAPP_KEYCODE_KP_EQUAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_multiply/">SAPP_KEYCODE_KP_MULTIPLY</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_kp_subtract/">SAPP_KEYCODE_KP_SUBTRACT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_l/">SAPP_KEYCODE_L</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_left/">SAPP_KEYCODE_LEFT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_left_alt/">SAPP_KEYCODE_LEFT_ALT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_left_bracket/">SAPP_KEYCODE_LEFT_BRACKET</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_left_control/">SAPP_KEYCODE_LEFT_CONTROL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_left_shift/">SAPP_KEYCODE_LEFT_SHIFT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_left_super/">SAPP_KEYCODE_LEFT_SUPER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_m/">SAPP_KEYCODE_M</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_menu/">SAPP_KEYCODE_MENU</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_minus/">SAPP_KEYCODE_MINUS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_n/">SAPP_KEYCODE_N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_num_lock/">SAPP_KEYCODE_NUM_LOCK</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_o/">SAPP_KEYCODE_O</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_p/">SAPP_KEYCODE_P</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_page_down/">SAPP_KEYCODE_PAGE_DOWN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_page_up/">SAPP_KEYCODE_PAGE_UP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_pause/">SAPP_KEYCODE_PAUSE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_period/">SAPP_KEYCODE_PERIOD</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_print_screen/">SAPP_KEYCODE_PRINT_SCREEN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_q/">SAPP_KEYCODE_Q</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_r/">SAPP_KEYCODE_R</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_right/">SAPP_KEYCODE_RIGHT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_right_alt/">SAPP_KEYCODE_RIGHT_ALT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_right_bracket/">SAPP_KEYCODE_RIGHT_BRACKET</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_right_control/">SAPP_KEYCODE_RIGHT_CONTROL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_right_shift/">SAPP_KEYCODE_RIGHT_SHIFT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_right_super/">SAPP_KEYCODE_RIGHT_SUPER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_s/">SAPP_KEYCODE_S</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_scroll_lock/">SAPP_KEYCODE_SCROLL_LOCK</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_semicolon/">SAPP_KEYCODE_SEMICOLON</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_slash/">SAPP_KEYCODE_SLASH</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_space/">SAPP_KEYCODE_SPACE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_t/">SAPP_KEYCODE_T</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_tab/">SAPP_KEYCODE_TAB</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_u/">SAPP_KEYCODE_U</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_up/">SAPP_KEYCODE_UP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_v/">SAPP_KEYCODE_V</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_w/">SAPP_KEYCODE_W</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_world_1/">SAPP_KEYCODE_WORLD_1</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_world_2/">SAPP_KEYCODE_WORLD_2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_x/">SAPP_KEYCODE_X</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_y/">SAPP_KEYCODE_Y</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_keycode_z/">SAPP_KEYCODE_Z</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_max_keycodes/">SAPP_MAX_KEYCODES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_max_mousebuttons/">SAPP_MAX_MOUSEBUTTONS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_max_touchpoints/">SAPP_MAX_TOUCHPOINTS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_modifier_alt/">SAPP_MODIFIER_ALT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_modifier_ctrl/">SAPP_MODIFIER_CTRL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_modifier_shift/">SAPP_MODIFIER_SHIFT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_modifier_super/">SAPP_MODIFIER_SUPER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mousebutton_invalid/">SAPP_MOUSEBUTTON_INVALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mousebutton_left/">SAPP_MOUSEBUTTON_LEFT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mousebutton_middle/">SAPP_MOUSEBUTTON_MIDDLE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sapp_mousebutton_right/">SAPP_MOUSEBUTTON_RIGHT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_buffer_too_small/">SFETCH_ERROR_BUFFER_TOO_SMALL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_cancelled/">SFETCH_ERROR_CANCELLED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_file_not_found/">SFETCH_ERROR_FILE_NOT_FOUND</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_invalid_http_status/">SFETCH_ERROR_INVALID_HTTP_STATUS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_no_buffer/">SFETCH_ERROR_NO_BUFFER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_no_error/">SFETCH_ERROR_NO_ERROR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sfetch_error_unexpected_eof/">SFETCH_ERROR_UNEXPECTED_EOF</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_action_clear/">SG_ACTION_CLEAR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_action_dontcare/">SG_ACTION_DONTCARE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_action_load/">SG_ACTION_LOAD</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_d3d11/">SG_BACKEND_D3D11</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_dummy/">SG_BACKEND_DUMMY</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_glcore33/">SG_BACKEND_GLCORE33</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_gles2/">SG_BACKEND_GLES2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_gles3/">SG_BACKEND_GLES3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_metal_ios/">SG_BACKEND_METAL_IOS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_metal_macos/">SG_BACKEND_METAL_MACOS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_metal_simulator/">SG_BACKEND_METAL_SIMULATOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_backend_wgpu/">SG_BACKEND_WGPU</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_blend_alpha/">SG_BLENDFACTOR_BLEND_ALPHA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_blend_color/">SG_BLENDFACTOR_BLEND_COLOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_dst_alpha/">SG_BLENDFACTOR_DST_ALPHA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_dst_color/">SG_BLENDFACTOR_DST_COLOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one/">SG_BLENDFACTOR_ONE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one_minus_blend_alpha/">SG_BLENDFACTOR_ONE_MINUS_BLEND_ALPHA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one_minus_blend_color/">SG_BLENDFACTOR_ONE_MINUS_BLEND_COLOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one_minus_dst_alpha/">SG_BLENDFACTOR_ONE_MINUS_DST_ALPHA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one_minus_dst_color/">SG_BLENDFACTOR_ONE_MINUS_DST_COLOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one_minus_src_alpha/">SG_BLENDFACTOR_ONE_MINUS_SRC_ALPHA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_one_minus_src_color/">SG_BLENDFACTOR_ONE_MINUS_SRC_COLOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_src_alpha/">SG_BLENDFACTOR_SRC_ALPHA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_src_alpha_saturated/">SG_BLENDFACTOR_SRC_ALPHA_SATURATED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_src_color/">SG_BLENDFACTOR_SRC_COLOR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendfactor_zero/">SG_BLENDFACTOR_ZERO</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendop_add/">SG_BLENDOP_ADD</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendop_reverse_subtract/">SG_BLENDOP_REVERSE_SUBTRACT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_blendop_subtract/">SG_BLENDOP_SUBTRACT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_bordercolor_opaque_black/">SG_BORDERCOLOR_OPAQUE_BLACK</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_bordercolor_opaque_white/">SG_BORDERCOLOR_OPAQUE_WHITE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_bordercolor_transparent_black/">SG_BORDERCOLOR_TRANSPARENT_BLACK</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffertype_indexbuffer/">SG_BUFFERTYPE_INDEXBUFFER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_buffertype_vertexbuffer/">SG_BUFFERTYPE_VERTEXBUFFER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_a/">SG_COLORMASK_A</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_b/">SG_COLORMASK_B</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_g/">SG_COLORMASK_G</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_none/">SG_COLORMASK_NONE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_r/">SG_COLORMASK_R</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_rgb/">SG_COLORMASK_RGB</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_colormask_rgba/">SG_COLORMASK_RGBA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_always/">SG_COMPAREFUNC_ALWAYS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_equal/">SG_COMPAREFUNC_EQUAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_greater/">SG_COMPAREFUNC_GREATER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_greater_equal/">SG_COMPAREFUNC_GREATER_EQUAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_less/">SG_COMPAREFUNC_LESS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_less_equal/">SG_COMPAREFUNC_LESS_EQUAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_never/">SG_COMPAREFUNC_NEVER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_comparefunc_not_equal/">SG_COMPAREFUNC_NOT_EQUAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_neg_x/">SG_CUBEFACE_NEG_X</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_neg_y/">SG_CUBEFACE_NEG_Y</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_neg_z/">SG_CUBEFACE_NEG_Z</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_num/">SG_CUBEFACE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_pos_x/">SG_CUBEFACE_POS_X</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_pos_y/">SG_CUBEFACE_POS_Y</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cubeface_pos_z/">SG_CUBEFACE_POS_Z</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cullmode_back/">SG_CULLMODE_BACK</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cullmode_front/">SG_CULLMODE_FRONT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_cullmode_none/">SG_CULLMODE_NONE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_facewinding_ccw/">SG_FACEWINDING_CCW</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_facewinding_cw/">SG_FACEWINDING_CW</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter_linear/">SG_FILTER_LINEAR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter_linear_mipmap_linear/">SG_FILTER_LINEAR_MIPMAP_LINEAR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter_linear_mipmap_nearest/">SG_FILTER_LINEAR_MIPMAP_NEAREST</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter_nearest/">SG_FILTER_NEAREST</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter_nearest_mipmap_linear/">SG_FILTER_NEAREST_MIPMAP_LINEAR</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_filter_nearest_mipmap_nearest/">SG_FILTER_NEAREST_MIPMAP_NEAREST</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_imagetype_2d/">SG_IMAGETYPE_2D</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_imagetype_3d/">SG_IMAGETYPE_3D</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_imagetype_array/">SG_IMAGETYPE_ARRAY</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_imagetype_cube/">SG_IMAGETYPE_CUBE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_indextype_none/">SG_INDEXTYPE_NONE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_indextype_uint16/">SG_INDEXTYPE_UINT16</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_indextype_uint32/">SG_INDEXTYPE_UINT32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_invalid_id/">SG_INVALID_ID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_color_attachments/">SG_MAX_COLOR_ATTACHMENTS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_mipmaps/">SG_MAX_MIPMAPS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_shaderstage_buffers/">SG_MAX_SHADERSTAGE_BUFFERS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_shaderstage_images/">SG_MAX_SHADERSTAGE_IMAGES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_shaderstage_ubs/">SG_MAX_SHADERSTAGE_UBS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_texturearray_layers/">SG_MAX_TEXTUREARRAY_LAYERS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_ub_members/">SG_MAX_UB_MEMBERS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_max_vertex_attributes/">SG_MAX_VERTEX_ATTRIBUTES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_num_inflight_frames/">SG_NUM_INFLIGHT_FRAMES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_num_shader_stages/">SG_NUM_SHADER_STAGES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc1_rgba/">SG_PIXELFORMAT_BC1_RGBA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc2_rgba/">SG_PIXELFORMAT_BC2_RGBA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc3_rgba/">SG_PIXELFORMAT_BC3_RGBA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc4_r/">SG_PIXELFORMAT_BC4_R</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc4_rsn/">SG_PIXELFORMAT_BC4_RSN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc5_rg/">SG_PIXELFORMAT_BC5_RG</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc5_rgsn/">SG_PIXELFORMAT_BC5_RGSN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc6h_rgbf/">SG_PIXELFORMAT_BC6H_RGBF</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc6h_rgbuf/">SG_PIXELFORMAT_BC6H_RGBUF</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bc7_rgba/">SG_PIXELFORMAT_BC7_RGBA</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_bgra8/">SG_PIXELFORMAT_BGRA8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_depth/">SG_PIXELFORMAT_DEPTH</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_depth_stencil/">SG_PIXELFORMAT_DEPTH_STENCIL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_etc2_rg11/">SG_PIXELFORMAT_ETC2_RG11</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_etc2_rg11sn/">SG_PIXELFORMAT_ETC2_RG11SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_etc2_rgb8/">SG_PIXELFORMAT_ETC2_RGB8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_etc2_rgb8a1/">SG_PIXELFORMAT_ETC2_RGB8A1</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_etc2_rgba8/">SG_PIXELFORMAT_ETC2_RGBA8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_none/">SG_PIXELFORMAT_NONE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_pvrtc_rgba_2bpp/">SG_PIXELFORMAT_PVRTC_RGBA_2BPP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_pvrtc_rgba_4bpp/">SG_PIXELFORMAT_PVRTC_RGBA_4BPP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_pvrtc_rgb_2bpp/">SG_PIXELFORMAT_PVRTC_RGB_2BPP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_pvrtc_rgb_4bpp/">SG_PIXELFORMAT_PVRTC_RGB_4BPP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r16/">SG_PIXELFORMAT_R16</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r16f/">SG_PIXELFORMAT_R16F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r16si/">SG_PIXELFORMAT_R16SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r16sn/">SG_PIXELFORMAT_R16SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r16ui/">SG_PIXELFORMAT_R16UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r32f/">SG_PIXELFORMAT_R32F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r32si/">SG_PIXELFORMAT_R32SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r32ui/">SG_PIXELFORMAT_R32UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r8/">SG_PIXELFORMAT_R8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r8si/">SG_PIXELFORMAT_R8SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r8sn/">SG_PIXELFORMAT_R8SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_r8ui/">SG_PIXELFORMAT_R8UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg11b10f/">SG_PIXELFORMAT_RG11B10F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg16/">SG_PIXELFORMAT_RG16</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg16f/">SG_PIXELFORMAT_RG16F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg16si/">SG_PIXELFORMAT_RG16SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg16sn/">SG_PIXELFORMAT_RG16SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg16ui/">SG_PIXELFORMAT_RG16UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg32f/">SG_PIXELFORMAT_RG32F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg32si/">SG_PIXELFORMAT_RG32SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg32ui/">SG_PIXELFORMAT_RG32UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg8/">SG_PIXELFORMAT_RG8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg8si/">SG_PIXELFORMAT_RG8SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg8sn/">SG_PIXELFORMAT_RG8SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rg8ui/">SG_PIXELFORMAT_RG8UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgb10a2/">SG_PIXELFORMAT_RGB10A2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba16/">SG_PIXELFORMAT_RGBA16</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba16f/">SG_PIXELFORMAT_RGBA16F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba16si/">SG_PIXELFORMAT_RGBA16SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba16sn/">SG_PIXELFORMAT_RGBA16SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba16ui/">SG_PIXELFORMAT_RGBA16UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba32f/">SG_PIXELFORMAT_RGBA32F</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba32si/">SG_PIXELFORMAT_RGBA32SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba32ui/">SG_PIXELFORMAT_RGBA32UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba8/">SG_PIXELFORMAT_RGBA8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba8si/">SG_PIXELFORMAT_RGBA8SI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba8sn/">SG_PIXELFORMAT_RGBA8SN</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_pixelformat_rgba8ui/">SG_PIXELFORMAT_RGBA8UI</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_primitivetype_lines/">SG_PRIMITIVETYPE_LINES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_primitivetype_line_strip/">SG_PRIMITIVETYPE_LINE_STRIP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_primitivetype_points/">SG_PRIMITIVETYPE_POINTS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_primitivetype_triangles/">SG_PRIMITIVETYPE_TRIANGLES</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_primitivetype_triangle_strip/">SG_PRIMITIVETYPE_TRIANGLE_STRIP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_resourcestate_alloc/">SG_RESOURCESTATE_ALLOC</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_resourcestate_failed/">SG_RESOURCESTATE_FAILED</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_resourcestate_initial/">SG_RESOURCESTATE_INITIAL</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_resourcestate_invalid/">SG_RESOURCESTATE_INVALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_resourcestate_valid/">SG_RESOURCESTATE_VALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_samplertype_float/">SG_SAMPLERTYPE_FLOAT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_samplertype_sint/">SG_SAMPLERTYPE_SINT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_samplertype_uint/">SG_SAMPLERTYPE_UINT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shaderstage_fs/">SG_SHADERSTAGE_FS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_shaderstage_vs/">SG_SHADERSTAGE_VS</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_decr_clamp/">SG_STENCILOP_DECR_CLAMP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_decr_wrap/">SG_STENCILOP_DECR_WRAP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_incr_clamp/">SG_STENCILOP_INCR_CLAMP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_incr_wrap/">SG_STENCILOP_INCR_WRAP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_invert/">SG_STENCILOP_INVERT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_keep/">SG_STENCILOP_KEEP</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_replace/">SG_STENCILOP_REPLACE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_stencilop_zero/">SG_STENCILOP_ZERO</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniformtype_float/">SG_UNIFORMTYPE_FLOAT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniformtype_float2/">SG_UNIFORMTYPE_FLOAT2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniformtype_float3/">SG_UNIFORMTYPE_FLOAT3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniformtype_float4/">SG_UNIFORMTYPE_FLOAT4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniformtype_invalid/">SG_UNIFORMTYPE_INVALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_uniformtype_mat4/">SG_UNIFORMTYPE_MAT4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_usage_dynamic/">SG_USAGE_DYNAMIC</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_usage_immutable/">SG_USAGE_IMMUTABLE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_usage_stream/">SG_USAGE_STREAM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_byte4/">SG_VERTEXFORMAT_BYTE4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_byte4n/">SG_VERTEXFORMAT_BYTE4N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_float/">SG_VERTEXFORMAT_FLOAT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_float2/">SG_VERTEXFORMAT_FLOAT2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_float3/">SG_VERTEXFORMAT_FLOAT3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_float4/">SG_VERTEXFORMAT_FLOAT4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_invalid/">SG_VERTEXFORMAT_INVALID</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_short2/">SG_VERTEXFORMAT_SHORT2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_short2n/">SG_VERTEXFORMAT_SHORT2N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_short4/">SG_VERTEXFORMAT_SHORT4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_short4n/">SG_VERTEXFORMAT_SHORT4N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_ubyte4/">SG_VERTEXFORMAT_UBYTE4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_ubyte4n/">SG_VERTEXFORMAT_UBYTE4N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_uint10_n2/">SG_VERTEXFORMAT_UINT10_N2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_ushort2n/">SG_VERTEXFORMAT_USHORT2N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexformat_ushort4n/">SG_VERTEXFORMAT_USHORT4N</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexstep_per_instance/">SG_VERTEXSTEP_PER_INSTANCE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_vertexstep_per_vertex/">SG_VERTEXSTEP_PER_VERTEX</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_wrap_clamp_to_border/">SG_WRAP_CLAMP_TO_BORDER</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_wrap_clamp_to_edge/">SG_WRAP_CLAMP_TO_EDGE</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_wrap_mirrored_repeat/">SG_WRAP_MIRRORED_REPEAT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-sg_wrap_repeat/">SG_WRAP_REPEAT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sapp_eventtype_force_u32/">_SAPP_EVENTTYPE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sapp_eventtype_num/">_SAPP_EVENTTYPE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_action_default/">_SG_ACTION_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_action_force_u32/">_SG_ACTION_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_action_num/">_SG_ACTION_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_blendfactor_default/">_SG_BLENDFACTOR_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_blendfactor_force_u32/">_SG_BLENDFACTOR_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_blendfactor_num/">_SG_BLENDFACTOR_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_blendop_default/">_SG_BLENDOP_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_blendop_force_u32/">_SG_BLENDOP_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_blendop_num/">_SG_BLENDOP_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_bordercolor_default/">_SG_BORDERCOLOR_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_bordercolor_force_u32/">_SG_BORDERCOLOR_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_bordercolor_num/">_SG_BORDERCOLOR_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_buffertype_default/">_SG_BUFFERTYPE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_buffertype_force_u32/">_SG_BUFFERTYPE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_buffertype_num/">_SG_BUFFERTYPE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_colormask_default/">_SG_COLORMASK_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_colormask_force_u32/">_SG_COLORMASK_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_comparefunc_default/">_SG_COMPAREFUNC_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_comparefunc_force_u32/">_SG_COMPAREFUNC_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_comparefunc_num/">_SG_COMPAREFUNC_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_cubeface_force_u32/">_SG_CUBEFACE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_cullmode_default/">_SG_CULLMODE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_cullmode_force_u32/">_SG_CULLMODE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_cullmode_num/">_SG_CULLMODE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_facewinding_default/">_SG_FACEWINDING_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_facewinding_force_u32/">_SG_FACEWINDING_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_facewinding_num/">_SG_FACEWINDING_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_filter_default/">_SG_FILTER_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_filter_force_u32/">_SG_FILTER_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_filter_num/">_SG_FILTER_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_imagetype_default/">_SG_IMAGETYPE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_imagetype_force_u32/">_SG_IMAGETYPE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_imagetype_num/">_SG_IMAGETYPE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_indextype_default/">_SG_INDEXTYPE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_indextype_force_u32/">_SG_INDEXTYPE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_indextype_num/">_SG_INDEXTYPE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_pixelformat_default/">_SG_PIXELFORMAT_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_pixelformat_force_u32/">_SG_PIXELFORMAT_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_pixelformat_num/">_SG_PIXELFORMAT_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_primitivetype_default/">_SG_PRIMITIVETYPE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_primitivetype_force_u32/">_SG_PRIMITIVETYPE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_primitivetype_num/">_SG_PRIMITIVETYPE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_resourcestate_force_u32/">_SG_RESOURCESTATE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_samplertype_default/">_SG_SAMPLERTYPE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_shaderstage_force_u32/">_SG_SHADERSTAGE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_stencilop_default/">_SG_STENCILOP_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_stencilop_force_u32/">_SG_STENCILOP_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_stencilop_num/">_SG_STENCILOP_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_uniformtype_force_u32/">_SG_UNIFORMTYPE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_uniformtype_num/">_SG_UNIFORMTYPE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_usage_default/">_SG_USAGE_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_usage_force_u32/">_SG_USAGE_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_usage_num/">_SG_USAGE_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_vertexformat_force_u32/">_SG_VERTEXFORMAT_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_vertexformat_num/">_SG_VERTEXFORMAT_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_vertexstep_default/">_SG_VERTEXSTEP_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_vertexstep_force_u32/">_SG_VERTEXSTEP_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_vertexstep_num/">_SG_VERTEXSTEP_NUM</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_wrap_default/">_SG_WRAP_DEFAULT</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_wrap_force_u32/">_SG_WRAP_FORCE_U32</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="../sokol-_sg_wrap_num/">_SG_WRAP_NUM</a></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

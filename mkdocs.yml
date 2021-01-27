@@ -77,82 +77,82 @@ nav:
             - Native code:                docs/lang/native-code.md
             - Misc:                       docs/lang/misc.md
         - Modules Reference:
-            - modules/index.md
+            - docs/modules/index.md
             - wonkey:
-                - modules/wonkey/wonkey-module.md
-                - debug:                   modules/wonkey/wonkey-debug.md
-                - gc:                      modules/wonkey/wonkey-gc.md
-                - math:                    modules/wonkey/wonkey-math.md
-                - types:                   modules/wonkey/wonkey-types.md
+                - docs/modules/wonkey/wonkey-module.md
+                - debug:                   docs/modules/wonkey/wonkey-debug.md
+                - gc:                      docs/modules/wonkey/wonkey-gc.md
+                - math:                    docs/modules/wonkey/wonkey-math.md
+                - types:                   docs/modules/wonkey/wonkey-types.md
             - std:
-                - modules/std/std-module.md
-                - permissions:             modules/std/std-permissions.md
-                - requesters:              modules/std/std-requesters.md
-                - socket:                  modules/std/std-socket.md
-                - digest:                  modules/std/std-digest.md
-                - base64:                  modules/std/std-base64.md
-                - zipfile:                 modules/std/std-zipfile.md
-                - jsonify:                 modules/std/std-jsonify.md
-                - json:                    modules/std/std-json.md
-                - stringio:                modules/std/std-stringio.md
-                - random:                  modules/std/std-random.md
-                - filesystem:              modules/std/std-filesystem.md
-                - process:                 modules/std/std-process.md
-                - fiber:                   modules/std/std-fiber.md
-                - timer:                   modules/std/std-timer.md
-                - time:                    modules/std/std-time.md
-                - async:                   modules/std/std-async.md
-                - audio:                   modules/std/std-audio.md
-                - graphics:                modules/std/std-graphics.md
-                - geom:                    modules/std/std-geom.md
-                - memory:                  modules/std/std-memory.md
-                - stream:                  modules/std/std-stream.md
-                - resource:                modules/std/std-resource.md
-                - collections:             modules/std/std-collections.md
-            - libc:                        modules/libc/libc-module.md
-            - thread:                      modules/thread/thread-module.md
-            - reflection:                  modules/reflection/reflection-module.md
+                - docs/modules/std/std-module.md
+                - permissions:             docs/modules/std/std-permissions.md
+                - requesters:              docs/modules/std/std-requesters.md
+                - socket:                  docs/modules/std/std-socket.md
+                - digest:                  docs/modules/std/std-digest.md
+                - base64:                  docs/modules/std/std-base64.md
+                - zipfile:                 docs/modules/std/std-zipfile.md
+                - jsonify:                 docs/modules/std/std-jsonify.md
+                - json:                    docs/modules/std/std-json.md
+                - stringio:                docs/modules/std/std-stringio.md
+                - random:                  docs/modules/std/std-random.md
+                - filesystem:              docs/modules/std/std-filesystem.md
+                - process:                 docs/modules/std/std-process.md
+                - fiber:                   docs/modules/std/std-fiber.md
+                - timer:                   docs/modules/std/std-timer.md
+                - time:                    docs/modules/std/std-time.md
+                - async:                   docs/modules/std/std-async.md
+                - audio:                   docs/modules/std/std-audio.md
+                - graphics:                docs/modules/std/std-graphics.md
+                - geom:                    docs/modules/std/std-geom.md
+                - memory:                  docs/modules/std/std-memory.md
+                - stream:                  docs/modules/std/std-stream.md
+                - resource:                docs/modules/std/std-resource.md
+                - collections:             docs/modules/std/std-collections.md
+            - libc:                        docs/modules/libc/libc-module.md
+            - thread:                      docs/modules/thread/thread-module.md
+            - reflection:                  docs/modules/reflection/reflection-module.md
             - mojo:
-                - modules/mojo/mojo-module.md
-                - audio:                   modules/mojo/mojo-audio.md
-                - input:                   modules/mojo/mojo-input.md
+                - docs/modules/mojo/mojo-module.md
+                - audio:                   docs/modules/mojo/mojo-audio.md
+                - input:                   docs/modules/mojo/mojo-input.md
                 - graphics:
-                    - modules/mojo/mojo-graphics.md
-                    - glutil:              modules/mojo/mojo-graphics-glutil.md
-                - app:                     modules/mojo/mojo-app.md
-            - mojo3d:                      modules/mojo3d/mojo3d-module.md
-            - mojo3d-loaders:              modules/mojo3d-loaders/mojo3d-loaders-module.md
-            - mojo3d-vr:                   modules/mojo3d-vr/mojo3d-vr-module.md
-            - mojox:                       modules/mojox/mojox-module.md
-            - admob:                       modules/admob/admob-module.md
-            - android:                     modules/android/android-module.md
-            - assimp:                      modules/assimp/assimp-module.md
-            - bullet:                      modules/bullet/bullet-module.md
-            - chipmunk:                    modules/chipmunk/chipmunk-module.md
-            - emscripten:                  modules/emscripten/emscripten-module.md
-            - freetype:                    modules/freetype/freetype-module.md
-            - gles20:                      modules/gles20/gles20-module.md
-            - hoedown:                     modules/hoedown/hoedown-module.md
-            - httprequest:                 modules/httprequest/httprequest-module.md
-            - iap:                         modules/iap/iap-module.md
-            - jni:                         modules/jni/jni-module.md
-            - litehtml:                    modules/litehtml/litehtml-module.md
-            - miniz:                       modules/miniz/miniz-module.md
-            - openal:                      modules/openal/openal-module.md
-            - opengl:                      modules/opengl/opengl-module.md
-            - sdl2:                        modules/sdl2/sdl2-module.md
-            - sdl2-mixer:                  modules/sdl2-mixer/sdl2-mixer-module.md
-            - sokol:                       modules/sokol/sokol-module.md
-            - sqlite:                      modules/sqlite/sqlite-module.md
-            - stb-image:                   modules/stb-image/stb-image-module.md
-            - stb-image-write:             modules/stb-image-write/stb-image-write-module.md
-            - stb-truetype:                modules/stb-truetype/stb-truetype-module.md
-            - stb-vorbis:                  modules/stb-vorbis/stb-vorbis-module.md
-            - theoraplayer:                modules/theoraplayer/theoraplayer-module.md
-            - tinyregex:                   modules/tinyregex/tinyregex-module.md
-            - tinyxml2:                    modules/tinyxml2/tinyxml2-module.md
-            - win32:                       modules/win32/win32-module.md
-            - zlib:                        modules/zlib/zlib-module.md
+                    - docs/modules/mojo/mojo-graphics.md
+                    - glutil:              docs/modules/mojo/mojo-graphics-glutil.md
+                - app:                     docs/modules/mojo/mojo-app.md
+            - mojo3d:                      docs/modules/mojo3d/mojo3d-module.md
+            - mojo3d-loaders:              docs/modules/mojo3d-loaders/mojo3d-loaders-module.md
+            - mojo3d-vr:                   docs/modules/mojo3d-vr/mojo3d-vr-module.md
+            - mojox:                       docs/modules/mojox/mojox-module.md
+            - admob:                       docs/modules/admob/admob-module.md
+            - android:                     docs/modules/android/android-module.md
+            - assimp:                      docs/modules/assimp/assimp-module.md
+            - bullet:                      docs/modules/bullet/bullet-module.md
+            - chipmunk:                    docs/modules/chipmunk/chipmunk-module.md
+            - emscripten:                  docs/modules/emscripten/emscripten-module.md
+            - freetype:                    docs/modules/freetype/freetype-module.md
+            - gles20:                      docs/modules/gles20/gles20-module.md
+            - hoedown:                     docs/modules/hoedown/hoedown-module.md
+            - httprequest:                 docs/modules/httprequest/httprequest-module.md
+            - iap:                         docs/modules/iap/iap-module.md
+            - jni:                         docs/modules/jni/jni-module.md
+            - litehtml:                    docs/modules/litehtml/litehtml-module.md
+            - miniz:                       docs/modules/miniz/miniz-module.md
+            - openal:                      docs/modules/openal/openal-module.md
+            - opengl:                      docs/modules/opengl/opengl-module.md
+            - sdl2:                        docs/modules/sdl2/sdl2-module.md
+            - sdl2-mixer:                  docs/modules/sdl2-mixer/sdl2-mixer-module.md
+            - sokol:                       docs/modules/sokol/sokol-module.md
+            - sqlite:                      docs/modules/sqlite/sqlite-module.md
+            - stb-image:                   docs/modules/stb-image/stb-image-module.md
+            - stb-image-write:             docs/modules/stb-image-write/stb-image-write-module.md
+            - stb-truetype:                docs/modules/stb-truetype/stb-truetype-module.md
+            - stb-vorbis:                  docs/modules/stb-vorbis/stb-vorbis-module.md
+            - theoraplayer:                docs/modules/theoraplayer/theoraplayer-module.md
+            - tinyregex:                   docs/modules/tinyregex/tinyregex-module.md
+            - tinyxml2:                    docs/modules/tinyxml2/tinyxml2-module.md
+            - win32:                       docs/modules/win32/win32-module.md
+            - zlib:                        docs/modules/zlib/zlib-module.md
 
 #    - About:
 #        - About: about_docs.md

@@ -15,7 +15,7 @@ nav:
             - docs/guide/index.md
             - The 'wake' compiler:        docs/guide/wake.md
             - Target SDKs:
-                - Overview:               docs/guide/sdks/index.md
+                - docs/guide/sdks/index.md
                 - Android:                docs/guide/sdks/android.md
                 - Emscripten:             docs/guide/sdks/emscripten.md
                 - iOS:                    docs/guide/sdks/ios.md

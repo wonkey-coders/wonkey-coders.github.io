@@ -20,6 +20,7 @@ You can use the following escape sequences in string literals:
 | ~t              | 9 (tab)
 | ~z              | 0 (null)
 | ~~              | 126 (tilde ~)
+| ""              | double-doublequote, same as `~q`
 
 For example, to include literal quotation marks in a string:
 

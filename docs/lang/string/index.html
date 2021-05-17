@@ -2301,13 +2301,15 @@
 <td align="left">126 (tilde ~)</td>
 </tr>
 <tr>
-<td align="left">""</td>
-<td align="left">double-doublequote, same as <code>~q</code></td>
+<td align="left"><code>""</code></td>
+<td align="left">34 (double-doublequote, same as <code>~q</code>)</td>
 </tr>
 </tbody>
 </table>
 <p>For example, to include literal quotation marks in a string:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">Local</span> <span class="nv">test</span> <span class="p">:</span><span class="o">=</span> <span class="s2">&quot;</span><span class="se">~q</span><span class="s2">Hello World</span><span class="se">~q</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">Local</span> <span class="nv">test1</span> <span class="p">:</span><span class="o">=</span> <span class="s2">&quot;</span><span class="se">~q</span><span class="s2">Hello World</span><span class="se">~q</span><span class="s2">&quot;</span>
+
+<span class="kd">Local</span> <span class="nv">test2</span> <span class="p">:</span><span class="o">=</span> <span class="s2">&quot;Using &quot;&quot; inside strings&quot;</span>
 </code></pre></div>
 <p>Strings can also be declared across multiple lines:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">Const</span> <span class="nv">multiLine</span> <span class="p">:</span><span class="o">=</span> <span class="s2">&quot;</span>

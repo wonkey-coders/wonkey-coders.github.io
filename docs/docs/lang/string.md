@@ -1,4 +1,4 @@
-# String
+﻿# String
 
 ## Introduction
 
@@ -20,12 +20,14 @@ You can use the following escape sequences in string literals:
 | ~t              | 9 (tab)
 | ~z              | 0 (null)
 | ~~              | 126 (tilde ~)
-| ""              | double-doublequote, same as `~q`
+| `""`            | 34 (double-doublequote, same as `~q`)
 
 For example, to include literal quotation marks in a string:
 
 ```monkey
-Local test := "~qHello World~q"
+Local test1 := "~qHello World~q"
+
+Local test2 := "Using "" inside strings"
 ```
 
 Strings can also be declared across multiple lines:
